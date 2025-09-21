@@ -1,0 +1,6 @@
+@import 'tailwindcss';
+
+@font-face {
+  font-family: 'poppins-extra-bold';
+  src: url('/Poppins/Poppins-ExtraBold.ttf');
+}
