@@ -2,6 +2,8 @@
 import HeaderComp from './components/Header/HeaderComp.vue'
 import HeroComp from './components/Hero/HeroComp.vue'
 import CategoriesComp from './components/Categories/CategoriesComp.vue'
+import ZX9SpeakerComp from './components/ZX9Speaker/ZX9SpeakerComp.vue'
+import ZX7SpeakerComp from './components/ZX7Speaker/ZX7SpeakerComp.vue'
 </script>
 
 <template>
@@ -16,6 +18,8 @@ import CategoriesComp from './components/Categories/CategoriesComp.vue'
     </div>
   </div>
   <CategoriesComp />
+  <ZX9SpeakerComp />
+  <ZX7SpeakerComp />
 </template>
 
 <style scoped></style>
