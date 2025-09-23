@@ -1,10 +1,15 @@
 <template>
   <menu
     ref="menu"
-    class="absolute top-1/13 lg:top-12.5 left-0 flex flex-col pt-3 bg-red-500 overflow-hidden transition-all duration-500 xl:hidden"
+    class="absolute top-1/13 lg:top-12.5 left-0 flex flex-col pt-3 bg-white overflow-hidden transition-all duration-500 xl:hidden"
     :class="[sidebar.isOpen ? 'w-full' : 'w-0 p-0']"
   >
-    <SideBarCategory />
+    <!-- categories container -->
+    <section class="flex flex-col items-center gap-26 pt-20">
+      <SideBarCategory :image="headphonesThumbnail" :product="'HEADPHONES'" />
+      <SideBarCategory :image="speakersThumbnail" :product="'SPEAKERS'" />
+      <SideBarCategory :image="earphonesThumbnail" :product="'EARPHONES'" />
+    </section>
   </menu>
 </template>
 
@@ -13,6 +18,9 @@ import { ref } from 'vue'
 import { useSideBarStore } from '@/stores/sidebar'
 import { onClickOutside } from '@vueuse/core'
 import SideBarCategory from './SideBarCategory.vue'
+import headphonesThumbnail from '@/assets/thumbnails/headphones-thumbnail.png'
+import speakersThumbnail from '@/assets/thumbnails/speaker-thumbnail.png'
+import earphonesThumbnail from '@/assets/thumbnails/earphones-thumbnail.png'
 
 const sidebar = useSideBarStore()
 
