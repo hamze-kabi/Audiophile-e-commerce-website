@@ -1,12 +1,13 @@
 <script setup>
 import HeaderComp from './components/Header/HeaderComp.vue'
 import HeroComp from './components/Hero/HeroComp.vue'
+import CategoriesComp from './components/Categories/CategoriesComp.vue'
 </script>
 
 <template>
   <!-- to occupy and turn the whole screen into flex -->
   <div
-    class="w-screen flex flex-col justify-center bg-[url(@/assets/home/mobile/image-header.jpg)] bg-no-repeat bg-cover bg-position-[center_bottom_2rem] md:bg-[url(@/assets/home/tablet/image-header.jpg)] md:bg-position-[center_top_0rem]"
+    class="w-screen flex flex-col justify-center bg-[url(@/assets/home/mobile/image-header.jpg)] bg-no-repeat bg-cover bg-position-[center_bottom_2rem] md:bg-[url(@/assets/home/tablet/image-header.jpg)] md:bg-position-[center_top_0rem] lg:bg-center xl:bg-[url(@/assets/home/desktop/image-hero.jpg)]"
   >
     <!-- container of header and hero -->
     <div>
@@ -14,6 +15,7 @@ import HeroComp from './components/Hero/HeroComp.vue'
       <HeroComp />
     </div>
   </div>
+  <CategoriesComp />
 </template>
 
 <style scoped></style>
