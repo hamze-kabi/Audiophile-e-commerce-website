@@ -1,28 +1,43 @@
 <template>
-  <RouterLink :to="to" :class="bg textColor ">{{ label }}</RouterLink>
+  <RouterLink
+    to=""
+    class="px-7 py-3.5 h- font-bold text-sm transition-colors duration-300"
+    :class="[bg, textColor, border, bgOnHover, textColorOnHover]"
+    >SEE PRODUCT</RouterLink
+  >
 </template>
-<!-- <button class="bg-orange-400 px-7 py-3 text-gray-300 font-bold text-sm">SEE PRODUCT</button> -->
+
 <script setup>
-defineProps({
+import { onMounted, ref } from 'vue'
+
+const props = defineProps({
   to: {
     type: String,
-    required: true,
     default: '',
   },
-  label: {
+  // orange, black or transparent
+  style: {
     type: String,
-    required: true,
-    default: 'SEE PRODUCT',
+    default: 'orange',
   },
-  bg: {
-    type: String,
-    required: true,
-    default: 'bg-orange-400',
-  },
-  textColor: {
-    type: String,
-    required: true,
-    default: 'text-gray-300',
-  },
+})
+
+const bg = ref('bg-orange-500')
+const textColor = ref('text-white')
+const border = ref('')
+const bgOnHover = ref('hover:bg-orange-300')
+const textColorOnHover = ref('')
+
+const styleSelector = function () {
+  if (props.style === 'black') {
+    ;((bg.value = 'bg-black'), (bgOnHover.value = 'hover:bg-gray-700'))
+  } else if (props.style === 'transparent') {
+    ;((bg.value = 'bg-transparent'), (textColor.value = 'text-black'), (border.value = 'border-2'))
+    ;((bgOnHover.value = 'hover:bg-black'), (textColorOnHover.value = 'hover:text-white'))
+  }
+}
+
+onMounted(() => {
+  styleSelector()
 })
 </script>

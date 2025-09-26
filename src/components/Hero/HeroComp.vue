@@ -9,8 +9,10 @@
       Experience natural, lifelike audio and exceptional build quality made for the passionate music
       enthusiast.
     </p>
-    <button class="bg-orange-400 px-7 py-3 text-gray-300 font-bold text-sm">SEE PRODUCT</button>
+    <LinkButton />
   </main>
 </template>
 
-<script setup></script>
+<script setup>
+import LinkButton from '../LinkButtons/LinkButton.vue'
+</script>

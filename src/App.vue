@@ -5,7 +5,6 @@ import CategoriesComp from './components/Categories/CategoriesComp.vue'
 import ZX9SpeakerComp from './components/ZX9Speaker/ZX9SpeakerComp.vue'
 import ZX7SpeakerComp from './components/ZX7Speaker/ZX7SpeakerComp.vue'
 import YX1EarphonesComp from './components/YX1Earphones/YX1EarphonesComp.vue'
-import LinkButton from './components/LinkButtons/LinkButton.vue'
 </script>
 
 <template>
@@ -19,7 +18,7 @@ import LinkButton from './components/LinkButtons/LinkButton.vue'
       <HeroComp />
     </div>
   </div>
-  <LinkButton />
+
   <CategoriesComp />
   <ZX9SpeakerComp />
   <ZX7SpeakerComp />

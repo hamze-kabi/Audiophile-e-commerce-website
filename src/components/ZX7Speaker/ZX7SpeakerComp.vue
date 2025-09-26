@@ -4,9 +4,11 @@
   >
     <div class="flex flex-col items-start ml-10 mt-10 pt-33 justify-center xl:ml-30">
       <h2 class="text-[2rem] tracking-wider font-semibold">ZX7 SPEAKER</h2>
-      <button class="border border-2 px-7 py-3 font-bold text-sm mt-6">SEE PRODUCT</button>
+      <LinkButton :style="'transparent'" />
     </div>
   </div>
 </template>
 
-<script setup></script>
+<script setup>
+import LinkButton from '../LinkButtons/LinkButton.vue'
+</script>
