@@ -1,18 +1,25 @@
 <template>
-  <div class="flex flex-col mt-35 mx-auto w-87 md:w-180">
+  <div class="flex flex-col mx-auto mt-35 w-87 md:w-180 xl:flex-row-reverse xl:w-290">
     <img
       class="rounded-lg md:hidden"
       src="@/assets/shared/mobile/image-best-gear.jpg"
       alt="best gear"
     />
     <img
-      class="hidden md:block rounded-lg"
+      class="hidden md:block xl:hidden rounded-lg"
       src="@/assets/shared/tablet/image-best-gear.jpg"
       alt="best gear"
     />
-    <div class="flex flex-col text-center mx-auto md:w-4/5">
+    <img
+      class="hidden xl:block rounded-lg"
+      src="@/assets/shared/desktop/image-best-gear.jpg"
+      alt="best gear"
+    />
+    <div
+      class="flex flex-col text-center mx-auto md:w-4/5 xl:text-left xl:justify-center xl:w-2/5 xl:ml-0"
+    >
       <h4 class="text-[1.8rem] tracking-wider font-semibold my-8 md:text-[2.5rem]">
-        BRINGING YOU THE <span class="text-orange-500">BEST</span> AUDIO GEAR
+        BRINGING YOU THE <span class="text-orange-600">BEST</span> AUDIO GEAR
       </h4>
       <p class="text-gray-500 w-7/8 mx-auto md:w-auto">
         Located at the heart of New York City, Audiophile is the premier store for high end
