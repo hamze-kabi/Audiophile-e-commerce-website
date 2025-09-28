@@ -1,12 +1,14 @@
 <template>
   <section
-    class="grid grid-flow-row grid-cols-1 place-items-center gap-10 py-10 px-5 text-center bg-black md:grid-cols-2 md:place-items-start md:px-15"
+    class="grid grid-flow-row grid-cols-1 place-items-center gap-10 py-10 px-5 text-center bg-black md:grid-cols-2 md:place-items-start md:px-15 xl:px-50 xl:pt-5"
   >
-    <div class="h-[4px] w-[8rem] bg-orange-500 -translate-y-10 md:col-span-2"></div>
-    <BrandNameComp gridSettings="md:col-span-2" />
-    <NavbarComp gridSettings="md:col-span-2" axis="flex-col" />
-    <FooterDescriptionComp gridSettings="md:col-span-2" />
-    <CopyrightComp />
+    <div
+      class="h-[4px] w-[8rem] bg-orange-500 -translate-y-10 md:col-span-2 xl:-translate-y-5"
+    ></div>
+    <BrandNameComp gridSettings="md:col-span-2 xl:col-span-1" />
+    <NavbarComp gridSettings="md:col-span-2 xl:col-span-1" axis="flex-col" />
+    <FooterDescriptionComp gridSettings="md:col-span-2 xl:col-span-1" />
+    <CopyrightComp gridSettings="xl:col-start-1" />
     <SocialMediaLinksComp />
   </section>
 </template>
