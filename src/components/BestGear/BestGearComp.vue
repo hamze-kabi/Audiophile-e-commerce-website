@@ -1,5 +1,5 @@
 <template>
-  <div class="flex flex-col mx-auto mt-35 w-87 md:w-180 xl:flex-row-reverse xl:w-290">
+  <div class="flex flex-col mx-auto mt-35 w-87 mb-20 md:w-180 xl:flex-row-reverse xl:w-290">
     <img
       class="rounded-lg md:hidden"
       src="@/assets/shared/mobile/image-best-gear.jpg"

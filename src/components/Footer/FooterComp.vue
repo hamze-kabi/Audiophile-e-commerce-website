@@ -2,6 +2,7 @@
   <section
     class="grid grid-flow-row grid-cols-1 place-items-center gap-10 py-10 px-20 text-center bg-black"
   >
+    <div class="h-[4px] w-[8rem] bg-orange-500 -translate-y-10"></div>
     <BrandNameComp />
     <NavbarComp axis="flex-col" />
     <FooterDescriptionComp />
