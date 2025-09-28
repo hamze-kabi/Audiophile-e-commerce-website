@@ -2,7 +2,7 @@
   <!-- for screens upto 1024 -->
   <div class="flex items-center justify-between w-screen h-20 pb-4 xl:hidden">
     <BurgerIcon />
-    <h1 class="text-white text-2xl font-[poppins-extra-bold]">audiophile</h1>
+    <BrandNameComp />
     <img
       class="w-7 h-7 mx-3"
       id="dd"
@@ -13,13 +13,8 @@
   <hr class="border-t border-gray-100 opacity-20" />
   <!-- for screens 1440 and more -->
   <div class="hidden xl:flex items-center justify-around w-screen min-h-20 px-40">
-    <h1 class="text-white text-2xl font-[poppins-extra-bold]">audiophile</h1>
-    <nav class="flex justify-center gap-15 min-w-3xl">
-      <RouterLink class="text-white" to="">HOME</RouterLink>
-      <RouterLink class="text-white" to="">HEADPHONES</RouterLink>
-      <RouterLink class="text-white" to="">SPEAKERS</RouterLink>
-      <RouterLink class="text-white" to="">EARPHONES</RouterLink>
-    </nav>
+    <BrandNameComp />
+    <NavbarComp />
     <img
       class="w-7 h-7"
       id="dd"
@@ -35,4 +30,6 @@
 <script setup>
 import BurgerIcon from './BurgerIcon.vue'
 import SideBar from './SideBar.vue'
+import NavbarComp from './NavbarComp.vue'
+import BrandNameComp from './BrandNameComp.vue'
 </script>

@@ -6,6 +6,7 @@ import ZX9SpeakerComp from './components/ZX9Speaker/ZX9SpeakerComp.vue'
 import ZX7SpeakerComp from './components/ZX7Speaker/ZX7SpeakerComp.vue'
 import YX1EarphonesComp from './components/YX1Earphones/YX1EarphonesComp.vue'
 import BestGearComp from './components/BestGear/BestGearComp.vue'
+import FooterComp from './components/Footer/FooterComp.vue'
 </script>
 
 <template>
@@ -25,6 +26,7 @@ import BestGearComp from './components/BestGear/BestGearComp.vue'
   <ZX7SpeakerComp />
   <YX1EarphonesComp />
   <BestGearComp />
+  <FooterComp />
 </template>
 
 <style scoped></style>
