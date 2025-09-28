@@ -1,5 +1,8 @@
 <template>
-  <nav class="flex flex-col items-center gap-4 text-white md:flex-row md:justify-center md:gap-10">
+  <nav
+    class="flex flex-col items-center gap-4 text-white md:flex-row md:justify-center md:gap-10"
+    :class="gridSettings"
+  >
     <RouterLink class="hover:text-orange-500 transition-colors duration-300" to="">HOME</RouterLink>
     <RouterLink class="hover:text-orange-500 transition-colors duration-300" to=""
       >HEADPHONES</RouterLink
@@ -13,7 +16,11 @@
   </nav>
 </template>
 
-<script setup></script>
+<script setup>
+defineProps({
+  gridSettings: String,
+})
+</script>
 
 <!-- <template>
   <nav class="flex justify-center gap-15 min-w-3xl" :class="[axis, yo, width, itemsCenter, gap]">

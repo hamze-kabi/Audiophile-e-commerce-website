@@ -1,5 +1,9 @@
 <template>
-  <p class="text-gray-400">Copyright 2021. All Rights Reserved</p>
+  <p class="text-gray-400" :class="gridSettings">Copyright 2021. All Rights Reserved</p>
 </template>
 
-<script setup></script>
+<script setup>
+defineProps({
+  gridSettings: String,
+})
+</script>

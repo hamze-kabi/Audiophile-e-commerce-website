@@ -1,5 +1,5 @@
 <template>
-  <div class="flex gap-5">
+  <div class="flex gap-5 md:place-self-end" :class="gridSettings">
     <RouterLink to="">
       <img
         class="cursor-pointer"
@@ -24,4 +24,8 @@
   </div>
 </template>
 
-<script setup></script>
+<script setup>
+defineProps({
+  gridSettings: String,
+})
+</script>

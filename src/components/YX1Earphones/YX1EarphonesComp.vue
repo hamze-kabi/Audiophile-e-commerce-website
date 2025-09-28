@@ -1,6 +1,6 @@
 <template>
   <div
-    class="flex flex-col items-center justify-center mt-10 mx-auto gap-4 w-87 md:flex-row md:w-180"
+    class="flex flex-col items-center justify-center mt-10 mx-auto gap-4 max-w-87 md:flex-row md:w-180 md:max-w-full"
   >
     <img
       class="md:hidden rounded-2xl"
