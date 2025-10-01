@@ -1,5 +1,5 @@
 <template>
-  <div class="flex text-white gap-5 justify-center mb-5 -mt-3 md:justify-end xl:hidden">
+  <div class="flex text-white gap-5 justify-center mb-5 -mt-3">
     <button @click="languageChanger('en')" :class="enButtonColor" class="cursor-pointer">EN</button
     ><button @click="languageChanger('fa')" :class="faButtonColor" class="cursor-pointer">
       FA
