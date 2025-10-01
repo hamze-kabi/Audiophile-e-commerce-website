@@ -5,10 +5,10 @@
     <div
       class="h-[4px] w-[8rem] bg-orange-500 -translate-y-10 md:col-span-2 xl:-translate-y-5"
     ></div>
-    <BrandNameComp gridSettings="md:col-span-2 xl:col-span-1" />
-    <NavbarComp gridSettings="md:col-span-2 xl:col-span-1" axis="flex-col" />
-    <FooterDescriptionComp gridSettings="md:col-span-2 xl:col-span-1" />
-    <CopyrightComp gridSettings="xl:col-start-1" />
+    <BrandNameComp class="md:col-span-2 xl:col-span-1" />
+    <NavbarComp class="md:col-span-2 xl:col-span-1" axis="flex-col" />
+    <FooterDescriptionComp class="md:col-span-2 xl:col-span-1" />
+    <CopyrightComp class="xl:col-start-1" />
     <SocialMediaLinksComp />
   </section>
 </template>

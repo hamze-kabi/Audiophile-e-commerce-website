@@ -1,6 +1,26 @@
 <template>
-  <!-- for screens upto 1024 -->
-  <div class="flex items-center justify-between w-screen h-20 xl:hidden">
+  <div class="grid gird-cols-3 grid-rows-3 justify-around items-center pt-5">
+    <BurgerIcon class="row-start-1 col-start-1" />
+    <BrandNameComp class="row-start-1 col-start-2 pr-6" />
+    <NavbarComp class="hidden" />
+    <CartComp class="row-start-1 col-start-3" />
+    <LanguageChangerComp class="row-start-2 col-start-1 col-span-3 mt-2" />
+    <hr class="border-t border-gray-100 opacity-20 row-start-3 col-start-1 col-span-3 -mt-5" />
+    <SideBar />
+  </div>
+</template>
+
+<script setup>
+import BurgerIcon from './BurgerIcon.vue'
+import SideBar from './SideBar.vue'
+import NavbarComp from './NavbarComp.vue'
+import BrandNameComp from './BrandNameComp.vue'
+import CartComp from './CartComp.vue'
+import LanguageChangerComp from './LanguageChangerComp.vue'
+</script>
+
+<!-- for screens upto 1024 -->
+<!-- <div class="flex items-center justify-between w-screen h-20 xl:hidden">
     <BurgerIcon />
     <BrandNameComp />
     <img
@@ -16,9 +36,9 @@
       FA
     </button>
   </div>
-  <hr class="border-t border-gray-100 opacity-20" />
-  <!-- for screens 1440 and more -->
-  <div class="hidden xl:flex items-center justify-around w-screen min-h-20 px-40">
+  <hr class="xl:hidden border-t border-gray-100 opacity-20" /> -->
+<!-- for screens 1440 and more -->
+<!-- <div class="hidden xl:flex items-center justify-around w-screen min-h-20 px-40">
     <BrandNameComp />
     <NavbarComp />
     <img
@@ -33,39 +53,6 @@
       FA
     </button>
   </div>
-  <hr class="border-t border-gray-100 opacity-20 -translate-y-3" />
-  <!-- <div class="w-5/6 h-0.5 m-auto bg-white"></div> -->
-  <SideBar />
-</template>
-
-<script setup>
-import BurgerIcon from './BurgerIcon.vue'
-import SideBar from './SideBar.vue'
-import NavbarComp from './NavbarComp.vue'
-import BrandNameComp from './BrandNameComp.vue'
-import { useI18n } from 'vue-i18n'
-import { onMounted, ref } from 'vue'
-
-const { locale } = useI18n()
-const enButtonColor = ref('text-white')
-const faButtonColor = ref('text-white')
-
-const languageButtonColorer = function () {
-  if (locale.value === 'en') {
-    enButtonColor.value = 'text-orange-500'
-    faButtonColor.value = 'text-white'
-  } else {
-    enButtonColor.value = 'text-white'
-    faButtonColor.value = 'text-orange-500'
-  }
-}
-
-const languageChanger = function (targetLang) {
-  locale.value = targetLang
-  languageButtonColorer()
-}
-
-onMounted(() => {
-  languageButtonColorer()
-})
-</script>
+  <hr class="hidden xl:block border-t border-gray-100 opacity-20 -translate-y-3" /> -->
+<!-- <div class="w-5/6 h-0.5 m-auto bg-white"></div> -->
+<!-- <SideBar /> -->

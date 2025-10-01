@@ -1,7 +1,7 @@
 <template>
   <menu
     ref="menu"
-    class="absolute top-1/13 lg:top-12.5 left-0 flex flex-col pt-3 bg-white overflow-hidden transition-all duration-500 lg:pt-10 xl:hidden"
+    class="absolute top-1/11 lg:top-12.5 left-0 flex flex-col pt-3 bg-white overflow-hidden transition-all duration-500 lg:pt-10 xl:hidden"
     :class="[sidebar.isOpen ? 'w-full' : 'w-0 p-0']"
   >
     <!-- categories container -->

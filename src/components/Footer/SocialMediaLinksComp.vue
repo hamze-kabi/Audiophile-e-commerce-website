@@ -1,5 +1,5 @@
 <template>
-  <div class="flex gap-5 justify-center md:place-self-end xl:-translate-x-25" :class="gridSettings">
+  <div class="flex gap-5 justify-center md:place-self-end xl:-translate-x-25">
     <RouterLink to="">
       <img
         class="cursor-pointer"
@@ -25,7 +25,7 @@
 </template>
 
 <script setup>
-defineProps({
-  gridSettings: String,
+defineOptions({
+  inheritAttrs: true,
 })
 </script>

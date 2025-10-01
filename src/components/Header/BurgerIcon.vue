@@ -12,6 +12,10 @@
 <script setup>
 import { useSideBarStore } from '@/stores/sidebar'
 
+defineOptions({
+  inheritAttrs: true,
+})
+
 const sidebar = useSideBarStore()
 </script>
 <!-- <template>
