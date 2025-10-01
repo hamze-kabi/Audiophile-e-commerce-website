@@ -4,15 +4,13 @@
     <BurgerIcon />
     <BrandNameComp />
     <img
-      class="w-7 h-7 mx-3 cursor-pointer"
+      class="w-7 h-7 mx-3 cursor-pointer md:-translate-x-2"
       id="dd"
       src="@/assets/shopping-cart_90604-white.png"
       alt="@/assets/shopping-cart_90604-white.png"
     />
   </div>
-  <div
-    class="flex justify-center -translate-y-4 text-white gap-5 md:justify-end md:mr-4 xl:translate-y-14"
-  >
+  <div class="flex text-white gap-5 justify-center mb-5 -mt-3 md:justify-end md:mr-5 xl:hidden">
     <button @click="languageChanger('en')" :class="enButtonColor" class="cursor-pointer">EN</button
     ><button @click="languageChanger('fa')" :class="faButtonColor" class="cursor-pointer">
       FA
@@ -25,12 +23,17 @@
     <NavbarComp />
     <img
       class="w-7 h-7 cursor-pointer"
-      id="dd"
       src="@/assets/shopping-cart_90604-white.png"
       alt="@/assets/shopping-cart_90604-white.png"
     />
   </div>
-  <hr class="border-t border-gray-100 opacity-20" />
+  <div class="hidden xl:flex text-white gap-5 ml-335 -translate-y-12">
+    <button @click="languageChanger('en')" :class="enButtonColor" class="cursor-pointer">EN</button
+    ><button @click="languageChanger('fa')" :class="faButtonColor" class="cursor-pointer">
+      FA
+    </button>
+  </div>
+  <hr class="border-t border-gray-100 opacity-20 -translate-y-3" />
   <!-- <div class="w-5/6 h-0.5 m-auto bg-white"></div> -->
   <SideBar />
 </template>
