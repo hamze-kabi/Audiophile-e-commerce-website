@@ -1,3 +1,14 @@
+<!-- 
+-- PROGRESS --
+-- scrollbar
+1 - multilanguage
+2 - test code
+3 - analyze code 
+
+
+--- BACKLOG ---
+-->
+
 <script setup>
 import HeaderComp from './components/Header/HeaderComp.vue'
 import HeroComp from './components/Hero/HeroComp.vue'
@@ -12,7 +23,9 @@ import FooterComp from './components/Footer/FooterComp.vue'
 <template>
   <!-- to occupy and turn the whole screen into flex -->
   <div
+    :lang="$i18n.locale"
     class="w-screen flex flex-col justify-center bg-[url(@/assets/home/mobile/image-header.jpg)] bg-no-repeat bg-cover bg-position-[center_bottom_2rem] md:bg-[url(@/assets/home/tablet/image-header.jpg)] md:bg-position-[center_top_0rem] lg:bg-center xl:bg-[url(@/assets/home/desktop/image-hero.jpg)]"
+    :class="[$i18n.locale === 'fa' ? 'font-[family-name:rubik]' : '']"
   >
     <!-- container of header and hero -->
     <div>

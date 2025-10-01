@@ -1,5 +1,5 @@
 <template>
-  <div class="flex gap-5 md:place-self-end xl:-translate-x-25" :class="gridSettings">
+  <div class="flex gap-5 justify-center md:place-self-end xl:-translate-x-25" :class="gridSettings">
     <RouterLink to="">
       <img
         class="cursor-pointer"
