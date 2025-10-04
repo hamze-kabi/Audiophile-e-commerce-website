@@ -3,12 +3,13 @@
     to=""
     class="px-7 py-3.5 h- font-bold text-sm transition-colors duration-300"
     :class="[bg, textColor, border, bgOnHover, textColorOnHover]"
-    >SEE PRODUCT</RouterLink
+    >{{ t('SEE PRODUCT') }}</RouterLink
   >
 </template>
 
 <script setup>
 import { onMounted, ref } from 'vue'
+import { useI18n } from 'vue-i18n'
 
 const props = defineProps({
   to: {
@@ -22,6 +23,7 @@ const props = defineProps({
   },
 })
 
+const { t } = useI18n()
 const bg = ref('bg-orange-500')
 const textColor = ref('text-white')
 const border = ref('')
