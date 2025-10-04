@@ -1,7 +1,7 @@
 <!-- this component is used in sidebar and categories component -->
 <template>
   <div
-    dir="rtl"
+    :dir="[$i18n.locale === 'fa' ? 'rtl' : 'ltr']"
     class="flex flex-col bg-gray-100 items-center justify-center h-40 w-80 rounded-3xl"
   >
     <img
