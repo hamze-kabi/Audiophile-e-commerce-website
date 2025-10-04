@@ -1,6 +1,6 @@
 <template>
   <h1 class="text-white text-2xl font-extrabold">
-    <RouterLink to="">audiophile</RouterLink>
+    <RouterLink to="">{{ t('brand name') }}</RouterLink>
   </h1>
 </template>
 
