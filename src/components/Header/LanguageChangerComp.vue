@@ -10,6 +10,7 @@
 <script setup>
 import { useI18n } from 'vue-i18n'
 import { onMounted, ref } from 'vue'
+import { useLanguageStateStore } from '@/stores/languageState'
 
 defineOptions({
   inheritAttrs: true,
@@ -29,9 +30,12 @@ const languageButtonColorer = function () {
   }
 }
 
+const languageState = useLanguageStateStore()
+
 const languageChanger = function (targetLang) {
   locale.value = targetLang
   languageButtonColorer()
+  languageState.changeLanguage()
 }
 
 onMounted(() => {

@@ -18,14 +18,21 @@ import ZX7SpeakerComp from './components/ZX7Speaker/ZX7SpeakerComp.vue'
 import YX1EarphonesComp from './components/YX1Earphones/YX1EarphonesComp.vue'
 import BestGearComp from './components/BestGear/BestGearComp.vue'
 import FooterComp from './components/Footer/FooterComp.vue'
-</script>
+import { useLanguageStateStore } from './stores/languageState'
 
+const languageState = useLanguageStateStore()
+</script>
 <template>
   <!-- to occupy and turn the whole screen into flex -->
   <div
     :lang="$i18n.locale"
-    class="w-screen flex flex-col justify-center bg-[url(@/assets/home/mobile/image-header.jpg)] bg-no-repeat bg-cover bg-position-[center_bottom_2rem] md:bg-[url(@/assets/home/tablet/image-header.jpg)] md:bg-position-[center_top_0rem] lg:bg-center xl:bg-[url(@/assets/home/desktop/image-hero.jpg)]"
-    :class="[$i18n.locale === 'fa' ? 'font-[family-name:rubik]' : '']"
+    class="w-screen flex flex-col justify-center bg-[url(@/assets/home/mobile/image-header.jpg)] bg-no-repeat bg-cover bg-position-[center_bottom_2rem] md:bg-[url(@/assets/home/tablet/image-header.jpg)] md:bg-position-[center_top_0rem] lg:bg-center"
+    :class="[
+      languageState.isFarsi
+        ? // CHANGE THE BACKGROUND IMAGE TO THE REVERSE ONE
+          'font-[family-name:rubik] xl:bg-[url(@/assets/home/desktop/image-hero-flipped.jpg)]'
+        : 'xl:bg-[url(@/assets/home/desktop/image-hero.jpg)]',
+    ]"
   >
     <!-- container of header and hero -->
     <div>

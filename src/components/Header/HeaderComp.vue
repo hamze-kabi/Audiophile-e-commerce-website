@@ -1,5 +1,8 @@
 <template>
-  <div class="grid gird-cols-3 grid-rows-3 justify-around items-center pt-5 xl:flex">
+  <div
+    class="grid gird-cols-3 grid-rows-3 justify-around items-center pt-5 xl:flex"
+    :class="{ 'xl:flex-row-reverse': languageState.isFarsi }"
+  >
     <BurgerIcon class="row-start-1 col-start-1 xl:hidden" />
     <BrandNameComp class="row-start-1 col-start-2 pr-6" />
     <NavbarComp class="hidden xl:flex" />
@@ -20,6 +23,9 @@ import NavbarComp from './NavbarComp.vue'
 import BrandNameComp from './BrandNameComp.vue'
 import CartComp from './CartComp.vue'
 import LanguageChangerComp from './LanguageChangerComp.vue'
+import { useLanguageStateStore } from '@/stores/languageState'
+
+const languageState = useLanguageStateStore()
 </script>
 
 <!-- for screens upto 1024 -->
