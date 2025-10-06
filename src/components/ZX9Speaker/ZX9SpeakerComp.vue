@@ -12,24 +12,11 @@
       src="@/assets/home/desktop/image-speaker-zx9.png"
       alt="ZX9Speaker"
     />
-
     <div class="flex flex-col items-center justify-center gap-5 -mt-20 xl:items-start xl:mt-20">
-      <h2
-        class="text-[2.5rem] tracking-wider font-semibold md:hidden"
-        :class="{ hidden: languageState.isFarsi }"
-      >
-        ZX9 SPEAKER
+      <h2 class="text-[2.5rem] tracking-wider font-semibold" :dir="{ rtl: languageState.isFarsi }">
+        ZX9 {{ t('SPEAKER') }}
       </h2>
-      <h2
-        dir="rtl"
-        class="text-[2.5rem] tracking-wider font-semibold md:hidden"
-        :class="{ hidden: !languageState.isFarsi }"
-      >
-        اسپیکر ZX9
-      </h2>
-      <h2 class="hidden text-6xl tracking-wider font-semibold md:block">ZX9</h2>
-      <h2 class="hidden text-6xl tracking-wider font-semibold -mt-4 md:block">SPEAKER</h2>
-      <p class="text-center md:max-w-90 md:font-semibold xl:text-start">
+      <p class="text-center w-5/6 md:w-1/1 md:max-w-90 md:font-semibold xl:text-start">
         {{ t('zx9 content') }}
       </p>
       <LinkButton :style="'black'" />
