@@ -32,11 +32,3 @@ import { useLanguageStateStore } from '@/stores/languageState'
 const { t } = useI18n()
 const languageState = useLanguageStateStore()
 </script>
-
-<!-- <h2 class="text-[2.5rem] tracking-wider font-semibold -mt-25 md:hidden">ZX9 SPEAKER</h2>
-      <h2 class="hidden text-7xl tracking-wider font-semibold -mt-17 md:block">ZX9</h2>
-      <h2 class="hidden text-7xl tracking-wider font-semibold -mt-4 md:block">SPEAKER</h2>
-      <p class="text-center md:max-w-90 md:font-semibold">
-        Upgrade to premium speakers that are phenomenally built to deliver truly remarkable sound.
-      </p>
-      <button class="bg-black px-7 py-3 font-bold text-sm mb-15">SEE PRODUCT</button> -->

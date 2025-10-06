@@ -1,6 +1,7 @@
 <template>
   <div
-    class="flex flex-col items-center justify-center mt-10 mx-auto gap-4 max-w-87 md:flex-row md:w-180 md:max-w-full"
+    class="flex flex-col items-center justify-center mt-10 mx-auto gap-4 max-w-87 md:w-180 md:max-w-full"
+    :class="[languageState.isFarsi ? 'md:flex-row-reverse xl:w-290' : 'md:flex-row']"
   >
     <img
       class="md:hidden rounded-2xl"
@@ -18,7 +19,8 @@
       alt="earphones-yx1"
     />
     <div
-      class="flex flex-col items-start justify-center gap-3 bg-gray-200 rounded-2xl w-full pl-7 h-53 md:h-90 xl:h-80 xl:pl-20 xl:pr-87"
+      class="flex flex-col justify-center gap-3 bg-gray-200 rounded-2xl w-full h-53 md:h-90 xl:h-80 xl:pl-20 xl:pr-87"
+      :class="[languageState.isFarsi ? 'items-end  pr-7 xl:items-start ' : 'items-start pl-7']"
     >
       <h2 :dir="{ rtl: languageState.isFarsi }" class="text-[1.8rem] tracking-wider font-semibold">
         YX1 {{ t('EARPHONES') }}

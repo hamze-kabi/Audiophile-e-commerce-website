@@ -1,6 +1,7 @@
 <template>
   <div
-    class="flex flex-col mx-auto mt-35 max-w-87 mb-20 md:w-180 md:max-w-full xl:flex-row-reverse xl:w-290"
+    class="flex flex-col mx-auto mt-35 max-w-87 mb-20 md:w-180 md:max-w-full xl:w-290"
+    :class="[languageState.isFarsi ? 'xl:flex-row gap-40' : 'xl:flex-row-reverse']"
   >
     <img
       class="rounded-lg md:hidden"
@@ -18,7 +19,8 @@
       alt="best gear"
     />
     <div
-      class="flex flex-col text-center mx-auto md:w-4/5 xl:text-left xl:justify-center xl:w-2/5 xl:ml-0"
+      class="flex flex-col text-center mx-auto md:w-4/5 xl:justify-center xl:w-2/5 xl:ml-0"
+      :class="[languageState.isFarsi ? 'xl:text-right' : 'xl:text-left']"
     >
       <h4
         :class="{ hidden: languageState.isFarsi }"

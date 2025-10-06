@@ -1,5 +1,9 @@
 <template>
-  <p :dir="{ rtl: languageState.isFarsi }" class="text-gray-400 md:text-start">
+  <p
+    :dir="{ rtl: languageState.isFarsi }"
+    class="text-gray-400"
+    :class="[languageState.isFarsi ? 'md:text-end' : 'md:text-start']"
+  >
     {{ t('footer description') }}
   </p>
 </template>
