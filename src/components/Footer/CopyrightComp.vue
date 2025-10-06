@@ -1,9 +1,15 @@
 <template>
-  <p class="text-gray-400">Copyright 2021. All Rights Reserved</p>
+  <p :dir="{ rtl: languageState.isFarsi }" class="text-gray-400">{{ t('copyright') }}</p>
 </template>
 
 <script setup>
+import { useI18n } from 'vue-i18n'
+import { useLanguageStateStore } from '@/stores/languageState'
+
 defineOptions({
   inheritAttrs: true,
 })
+
+const { t } = useI18n()
+const languageState = useLanguageStateStore()
 </script>

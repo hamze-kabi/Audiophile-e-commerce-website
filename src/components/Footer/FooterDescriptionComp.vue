@@ -1,13 +1,17 @@
 <template>
-  <p class="text-gray-400 md:text-start">
-    Audiophile is an all in one stop to fulfill your audio needs. We're a small team of music lovers
-    and sound specialists who are devoted to helping you get the most out of personal audio. Come
-    and visit our demo facility - we’re open 7 days a week.
+  <p :dir="{ rtl: languageState.isFarsi }" class="text-gray-400 md:text-start">
+    {{ t('footer description') }}
   </p>
 </template>
 
 <script setup>
+import { useI18n } from 'vue-i18n'
+import { useLanguageStateStore } from '@/stores/languageState'
+
 defineOptions({
   inheritAttrs: true,
 })
+
+const { t } = useI18n()
+const languageState = useLanguageStateStore()
 </script>
