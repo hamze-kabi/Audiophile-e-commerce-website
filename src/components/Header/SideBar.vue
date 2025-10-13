@@ -6,7 +6,11 @@
   >
     <!-- categories container -->
     <section class="flex flex-col items-center gap-26 pt-20 md:flex-row md:gap-10 md:px-5">
-      <SideBarCategory :image="headphonesThumbnail" :product="t('HEADPHONES')" />
+      <SideBarCategory
+        :to="'/categories/headphones'"
+        :image="headphonesThumbnail"
+        :product="t('HEADPHONES')"
+      />
       <SideBarCategory :image="speakersThumbnail" :product="t('SPEAKERS')" />
       <SideBarCategory :image="earphonesThumbnail" :product="t('EARPHONES')" />
     </section>

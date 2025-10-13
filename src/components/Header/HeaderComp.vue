@@ -1,6 +1,7 @@
 <template>
   <!-- the main container, does not include the horizontal line at the bottom of the header -->
   <div
+    v-bind="$attrs"
     class="grid gird-cols-3 grid-rows-3 justify-around items-center pt-5 xl:flex"
     :class="{ 'xl:flex-row-reverse': languageState.isFarsi }"
   >
@@ -26,6 +27,10 @@ import BrandNameComp from './BrandNameComp.vue'
 import CartComp from './CartComp.vue'
 import LanguageChangerComp from './LanguageChangerComp.vue'
 import { useLanguageStateStore } from '@/stores/languageState'
+
+defineOptions({
+  inheritAttrs: true,
+})
 
 const languageState = useLanguageStateStore()
 </script>

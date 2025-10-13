@@ -12,7 +12,7 @@
     <p class="-translate-y-32 font-bold md:-translate-y-23 lg:-translate-y-28">{{ product }}</p>
     <RouterLink
       class="-translate-y-32 font-bold text-gray-500 text-sm md:-translate-y-23 lg:-translate-y-28"
-      to=""
+      :to="to"
       >{{ t('shop') }}
       <span class="-translate-y-32 font-bold text-lg text-orange-600">></span></RouterLink
     >
@@ -24,6 +24,7 @@ import { useI18n } from 'vue-i18n'
 defineProps({
   image: String,
   product: String,
+  to: String,
 })
 
 const { t } = useI18n()
