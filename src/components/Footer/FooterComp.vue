@@ -37,15 +37,6 @@
   </section>
 </template>
 
-<!-- <div
-      class="md:col-span-2 xl:-translate-y-5"
-    ></div>
-    <BrandNameComp class="md:col-span-2 xl:col-span-1" />
-    <NavbarComp class="md:col-span-2 xl:col-span-1" axis="flex-col" />
-    <FooterDescriptionComp class="md:col-span-2 xl:col-span-1" />
-    <CopyrightComp :class="{ 'col-start-2 row-start-5': languageState.isFarsi }" />
-    <SocialMediaLinksComp :class="{ 'col-start-1 row-start-5 ': languageState.isFarsi }" /> -->
-
 <script setup>
 import BrandNameComp from '../Header/BrandNameComp.vue'
 import NavbarComp from '../Header/NavbarComp.vue'

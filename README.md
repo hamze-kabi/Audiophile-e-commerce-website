@@ -1,3 +1,6 @@
+for multilanguage feature i18n is used
+state of language is managed using pinia
+
 # vue-project
 
 This template should help get you started developing with Vue 3 in Vite.

@@ -12,11 +12,8 @@ import { onMounted, ref } from 'vue'
 import { useI18n } from 'vue-i18n'
 
 const props = defineProps({
-  to: {
-    type: String,
-    default: '',
-  },
-  // orange, black or transparent
+  // there are three styles for buttons, orange, black and transparent, when a style is selected all of its styles get applied automatically
+  // the default style is orange
   style: {
     type: String,
     default: 'orange',

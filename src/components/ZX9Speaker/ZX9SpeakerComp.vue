@@ -12,6 +12,7 @@
       src="@/assets/home/desktop/image-speaker-zx9.png"
       alt="ZX9Speaker"
     />
+    <!-- text and button container -->
     <div class="flex flex-col items-center justify-center gap-5 -mt-20 xl:items-start xl:mt-20">
       <h2 class="text-[2.5rem] tracking-wider font-semibold" :dir="{ rtl: languageState.isFarsi }">
         ZX9 {{ t('SPEAKER') }}

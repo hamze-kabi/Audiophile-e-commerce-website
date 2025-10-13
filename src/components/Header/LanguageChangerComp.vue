@@ -17,6 +17,7 @@ defineOptions({
 })
 
 const { locale } = useI18n()
+
 const enButtonColor = ref('text-white')
 const faButtonColor = ref('text-white')
 
@@ -32,6 +33,12 @@ const languageButtonColorer = function () {
 
 const languageState = useLanguageStateStore()
 
+// setting the default language of website to Farsi
+locale.value = 'fa'
+languageState.isFarsi = true
+
+// language change is managed using pinia and i18n, i18n is used to change the inner text of elements based on the active language
+// and pinia is used to manage state of language of whole page
 const languageChanger = function (targetLang) {
   locale.value = targetLang
   languageButtonColorer()

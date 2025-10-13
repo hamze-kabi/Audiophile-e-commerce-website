@@ -1,11 +1,5 @@
 <!-- 
 -- PROGRESS --
--- scrollbar
-1 - multilanguage
-2 - test code
-3 - analyze code 
-
-
 --- BACKLOG ---
 -->
 
@@ -20,6 +14,7 @@ import BestGearComp from './components/BestGear/BestGearComp.vue'
 import FooterComp from './components/Footer/FooterComp.vue'
 import { useLanguageStateStore } from './stores/languageState'
 
+// use to manage language of site
 const languageState = useLanguageStateStore()
 </script>
 <template>
@@ -29,8 +24,7 @@ const languageState = useLanguageStateStore()
     class="w-screen flex flex-col justify-center bg-[url(@/assets/home/mobile/image-header.jpg)] bg-no-repeat bg-cover bg-position-[center_bottom_2rem] md:bg-[url(@/assets/home/tablet/image-header.jpg)] md:bg-position-[center_top_0rem] lg:bg-center"
     :class="[
       languageState.isFarsi
-        ? // CHANGE THE BACKGROUND IMAGE TO THE REVERSE ONE
-          'font-[family-name:rubik] xl:bg-[url(@/assets/home/desktop/image-hero-flipped.jpg)]'
+        ? 'font-[family-name:rubik] xl:bg-[url(@/assets/home/desktop/image-hero-flipped.jpg)]'
         : 'xl:bg-[url(@/assets/home/desktop/image-hero.jpg)]',
     ]"
   >
@@ -40,7 +34,7 @@ const languageState = useLanguageStateStore()
       <HeroComp />
     </div>
   </div>
-
+  <!-- rest of the page, from categories upto footer -->
   <CategoriesComp />
   <ZX9SpeakerComp />
   <ZX7SpeakerComp />

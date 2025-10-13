@@ -27,6 +27,7 @@ const sidebar = useSideBarStore()
 
 const menu = ref(null)
 
+// when sidebar is open, if clicked outside of the sidebar, sidebar gets closed
 onClickOutside(menu, (event) => {
   if (sidebar.isOpen) {
     event.stopImmediatePropagation()
