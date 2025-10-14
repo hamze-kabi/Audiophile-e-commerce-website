@@ -1,9 +1,9 @@
 <template>
   <!-- the whole container, contains image and text -->
   <main class="flex flex-col items-center justify-center">
-    <img :src="imgSrc" :alt="imgAlt" />
+    <img class="scale-70 rounded-2xl" :src="imgSrc" :alt="imgAlt" />
     <!-- text section -->
-    <section class="flex flex-col items-center justify-center">
+    <section class="flex flex-col items-center justify-center -mt-10 gap-3">
       <!-- new product -->
       <p
         v-if="show"
@@ -13,9 +13,16 @@
         {{ t('new product') }}
       </p>
       <!-- product name -->
-      <p :dir="languageState.isFarsi ? 'rtl' : 'ltr'">
-        {{ t('XX99 Mark II Headphones') }}
+      <p
+        :dir="languageState.isFarsi ? 'rtl' : 'ltr'"
+        :class="[languageState.isFarsi ? 'w-45' : 'w-50 font-bold']"
+        class="text-3xl text-center"
+      >
+        {{ productName }}
       </p>
+      <!-- content -->
+      <p class="text-center text-gray-600 w-85">{{ productContent }}</p>
+      <LinkButton />
     </section>
   </main>
 </template>
@@ -23,6 +30,7 @@
 <script setup>
 import { useI18n } from 'vue-i18n'
 import { useLanguageStateStore } from '@/stores/languageState'
+import LinkButton from '../LinkButtons/LinkButton.vue'
 
 defineProps({
   imgSrc: String,
@@ -31,6 +39,8 @@ defineProps({
     type: Boolean,
     default: false,
   },
+  productName: String,
+  productContent: String,
 })
 
 const { t } = useI18n()
