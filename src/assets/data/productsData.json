@@ -1,0 +1,12 @@
+{
+  "XX99MarkII": {
+    "images": {
+      "mobile": "/products/xx99markii/xx99markiimobile.jpg",
+      "tablet": "/products/xx99markii/xx99markiitablet.jpg",
+      "desktop": "/products/xx99markii/xx99markiidesktop.jpg"
+    },
+    "newProduct": true,
+    "title": "XX99 Mark II Headphones",
+    "content": "XX99 Mark II Headphones content"
+  }
+}

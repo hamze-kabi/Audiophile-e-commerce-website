@@ -51,13 +51,7 @@ components:
   >
     <HeaderComp class="bg-black w-full" />
     <CategoriesHeroComp />
-    <CategoriesProduct
-      :show="true"
-      :imgSrc="XX99MarkII"
-      :imgAlt="'XX99 Mark II'"
-      :productName="t('XX99 Mark II Headphones')"
-      :productContent="t('XX99 Mark II Headphones content')"
-    />
+    <CategoriesProduct :product="productsData.XX99MarkII" />
   </main>
 </template>
 
@@ -67,9 +61,16 @@ import CategoriesHeroComp from '@/components/CategoriesHero/CategoriesHeroComp.v
 import CategoriesProduct from '@/components/Categories Product/CategoriesProduct.vue'
 import { useLanguageStateStore } from '@/stores/languageState'
 import { useI18n } from 'vue-i18n'
-import XX99MarkII from '@/assets/product-xx99-mark-two-headphones/mobile/image-product.jpg'
-import XX99MarkIITablet from '@/assets/product-xx99-mark-two-headphones/tablet/image-category-page-preview.jpg'
+import productsData from '@/assets/data/productsData.json'
+import { onMounted } from 'vue'
+// import XX99MarkII from '@/assets/product-xx99-mark-two-headphones/mobile/image-product.jpg'
+// import XX99MarkIITablet from '@/assets/product-xx99-mark-two-headphones/tablet/image-category-page-preview.jpg'
+// import XX99MarkIIDesktop from '@/assets/product-xx99-mark-two-headphones/desktop/image-category-page-preview.jpg'
 
 const languageState = useLanguageStateStore()
 const { t } = useI18n()
+
+onMounted(() => {
+  console.log(productsData.XX99MarkII.title)
+})
 </script>
