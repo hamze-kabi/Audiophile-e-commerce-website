@@ -1,0 +1,24 @@
+{
+  "XX99MarkII": {
+    "xlFlexRowDirection": "xl:flex-row",
+    "images": {
+      "mobile": "/products/xx99markii/xx99markiimobile.jpg",
+      "tablet": "/products/xx99markii/xx99markiitablet.jpg",
+      "desktop": "/products/xx99markii/xx99markiidesktop.jpg"
+    },
+    "newProduct": true,
+    "title": "XX99 Mark II Headphones",
+    "content": "XX99 Mark II Headphones content"
+  },
+  "XX59": {
+    "xlFlexRowDirection": "xl:flex-row-reverse",
+    "images": {
+      "mobile": "/products/xx59/xx59mobile.jpg",
+      "tablet": "/products/xx59/xx59tablet.jpg",
+      "desktop": "/products/xx59/xx59desktop.jpg"
+    },
+    "newProduct": false,
+    "title": "XX59 Headphones",
+    "content": "XX59 Headphones content"
+  }
+}
