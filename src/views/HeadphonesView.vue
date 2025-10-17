@@ -51,10 +51,6 @@ components:
   >
     <HeaderComp class="bg-black w-full" />
     <CategoriesHeroComp />
-    <!-- <CategoriesProduct :product="HeadphonesData.XX99MarkII" /> -->
-    <!-- <div v-for="headphone in HeadphonesData" v-bind="headphone.title">
-      <CategoriesProduct :product="headphone" />
-    </div> -->
     <div v-for="headphone in HeadphonesData" :key="headphone.title">
       <CategoriesProduct :product="headphone" />
     </div>
@@ -66,17 +62,7 @@ import HeaderComp from '@/components/Header/HeaderComp.vue'
 import CategoriesHeroComp from '@/components/CategoriesHero/CategoriesHeroComp.vue'
 import CategoriesProduct from '@/components/Categories Product/CategoriesProduct.vue'
 import { useLanguageStateStore } from '@/stores/languageState'
-import { useI18n } from 'vue-i18n'
 import HeadphonesData from '@/assets/data/HeadphonesData.json'
-import { onMounted } from 'vue'
-// import XX99MarkII from '@/assets/product-xx99-mark-two-headphones/mobile/image-product.jpg'
-// import XX99MarkIITablet from '@/assets/product-xx99-mark-two-headphones/tablet/image-category-page-preview.jpg'
-// import XX99MarkIIDesktop from '@/assets/product-xx99-mark-two-headphones/desktop/image-category-page-preview.jpg'
 
 const languageState = useLanguageStateStore()
-const { t } = useI18n()
-
-onMounted(() => {
-  console.log(HeadphonesData.XX99MarkII.title)
-})
 </script>

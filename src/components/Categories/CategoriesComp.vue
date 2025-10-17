@@ -10,9 +10,9 @@
 
 <script setup>
 import SideBarCategory from '../Header/SideBarCategory.vue'
-import headphonesThumbnail from '@/assets/thumbnails/headphones-thumbnail.png'
-import speakersThumbnail from '@/assets/thumbnails/speaker-thumbnail.png'
-import earphonesThumbnail from '@/assets/thumbnails/earphones-thumbnail.png'
+import headphonesThumbnail from '/thumbnails/headphones-thumbnail.png'
+import speakersThumbnail from '/thumbnails/speaker-thumbnail.png'
+import earphonesThumbnail from '/thumbnails/earphones-thumbnail.png'
 import { useI18n } from 'vue-i18n'
 
 const { t } = useI18n()

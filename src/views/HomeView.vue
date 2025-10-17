@@ -8,19 +8,21 @@ import YX1EarphonesComp from '@/components/YX1Earphones/YX1EarphonesComp.vue'
 import BestGearComp from '@/components/BestGear/BestGearComp.vue'
 import FooterComp from '@/components/Footer/FooterComp.vue'
 import { useLanguageStateStore } from '@/stores/languageState'
+import { onMounted } from 'vue'
 
 // use to manage language of site
 const languageState = useLanguageStateStore()
+onMounted(() => {})
 </script>
 <template>
   <!-- to occupy and turn the whole screen into flex -->
   <div
-    :lang="$i18n.locale"
-    class="w-screen flex flex-col justify-center bg-[url(@/assets/home/mobile/image-header.jpg)] bg-no-repeat bg-cover bg-position-[center_bottom_2rem] md:bg-[url(@/assets/home/tablet/image-header.jpg)] md:bg-position-[center_top_0rem] lg:bg-center"
+    :lang="languageState.currentLang"
+    class="w-screen flex flex-col justify-center bg-[url(/home/mobile/image-header.jpg)] bg-no-repeat bg-cover bg-position-[center_bottom_2rem] md:bg-[url(/home/tablet/image-header.jpg)] md:bg-position-[center_top_0rem] lg:bg-center"
     :class="[
       languageState.isFarsi
-        ? 'font-[family-name:rubik] xl:bg-[url(@/assets/home/desktop/image-hero-flipped.jpg)]'
-        : 'xl:bg-[url(@/assets/home/desktop/image-hero.jpg)]',
+        ? 'font-[family-name:rubik] xl:bg-[url(/home/desktop/image-hero-flipped.jpg)]'
+        : 'xl:bg-[url(/home/desktop/image-hero.jpg)]',
     ]"
   >
     <!-- container of header and hero -->

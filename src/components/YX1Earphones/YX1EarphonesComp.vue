@@ -6,17 +6,17 @@
     <!-- image section, three images are loaded, each for a range screen sizes, mobile, tablet and large laptops -->
     <img
       class="md:hidden rounded-2xl"
-      src="@/assets/home/mobile/image-earphones-yx1.jpg"
+      src="/home/mobile/image-earphones-yx1.jpg"
       alt="earphones-yx1"
     />
     <img
       class="hidden md:block rounded-2xl h-53 md:h-90 xl:hidden"
-      src="@/assets/home/tablet/image-earphones-yx1.jpg"
+      src="/home/tablet/image-earphones-yx1.jpg"
       alt="earphones-yx1"
     />
     <img
       class="hidden xl:block rounded-2xl"
-      src="@/assets/home/desktop/image-earphones-yx1.jpg"
+      src="/home/desktop/image-earphones-yx1.jpg"
       alt="earphones-yx1"
     />
     <!-- section that contains text and button -->

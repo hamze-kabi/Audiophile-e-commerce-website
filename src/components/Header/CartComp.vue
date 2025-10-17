@@ -2,8 +2,8 @@
   <img
     class="w-7 h-7 cursor-pointer"
     id="dd"
-    src="@/assets/shopping-cart_90604-white.png"
-    alt="@/assets/shopping-cart_90604-white.png"
+    src="/shopping-cart_90604-white.png"
+    alt="/shopping-cart_90604-white.png"
   />
 </template>
 

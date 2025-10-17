@@ -3,19 +3,15 @@
     class="flex flex-col mx-auto mt-35 max-w-87 mb-20 md:w-180 md:max-w-full xl:w-290"
     :class="[languageState.isFarsi ? 'xl:flex-row gap-40' : 'xl:flex-row-reverse']"
   >
-    <img
-      class="rounded-lg md:hidden"
-      src="@/assets/shared/mobile/image-best-gear.jpg"
-      alt="best gear"
-    />
+    <img class="rounded-lg md:hidden" src="/shared/mobile/image-best-gear.jpg" alt="best gear" />
     <img
       class="hidden md:block xl:hidden rounded-lg"
-      src="@/assets/shared/tablet/image-best-gear.jpg"
+      src="/shared/tablet/image-best-gear.jpg"
       alt="best gear"
     />
     <img
       class="hidden xl:block rounded-lg"
-      src="@/assets/shared/desktop/image-best-gear.jpg"
+      src="/shared/desktop/image-best-gear.jpg"
       alt="best gear"
     />
     <div
