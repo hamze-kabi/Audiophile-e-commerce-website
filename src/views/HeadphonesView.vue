@@ -49,11 +49,15 @@ components:
     :class="[languageState.isFarsi ? 'font-[family-name:rubik]' : '']"
     class="w-full h-full flex flex-col items-center justify-center"
   >
+    <!-- header component -->
     <HeaderComp class="bg-black w-full" />
+    <!-- hero of categories component -->
     <CategoriesHeroComp />
+    <!-- production components, created using iteration through HeadphonesData.json -->
     <div v-for="headphone in HeadphonesData" :key="headphone.title">
       <CategoriesProduct :product="headphone" />
     </div>
+    <CategoriesComp class="w-full mt-7" />
   </main>
 </template>
 
@@ -63,6 +67,7 @@ import CategoriesHeroComp from '@/components/CategoriesHero/CategoriesHeroComp.v
 import CategoriesProduct from '@/components/Categories Product/CategoriesProduct.vue'
 import { useLanguageStateStore } from '@/stores/languageState'
 import HeadphonesData from '@/assets/data/HeadphonesData.json'
+import CategoriesComp from '@/components/Categories/CategoriesComp.vue'
 
 const languageState = useLanguageStateStore()
 </script>

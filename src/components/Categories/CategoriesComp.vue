@@ -1,6 +1,6 @@
 <template>
   <section
-    class="flex flex-col items-center justify-center gap-26 pt-20 md:flex-row md:gap-10 md:px-5 lg:mt-10 xl:gap-30"
+    class="flex flex-col items-center justify-center gap-26 pt-20 md:flex-row md:gap-10 md:px-5 md:mt-10 xl:gap-30"
   >
     <SideBarCategory :image="headphonesThumbnail" :product="t('HEADPHONES')" />
     <SideBarCategory :image="speakersThumbnail" :product="t('SPEAKERS')" />
@@ -16,4 +16,8 @@ import earphonesThumbnail from '/thumbnails/earphones-thumbnail.png'
 import { useI18n } from 'vue-i18n'
 
 const { t } = useI18n()
+
+defineOptions({
+  inheritAttrs: true,
+})
 </script>

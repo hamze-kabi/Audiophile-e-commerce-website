@@ -20,5 +20,16 @@
     "newProduct": false,
     "title": "XX59 Headphones",
     "content": "XX59 Headphones content"
+  },
+  "XX99MarkI": {
+    "xlFlexRowDirection": "xl:flex-row",
+    "images": {
+      "mobile": "/product-xx99-mark-one-headphones/mobile/image-product.jpg",
+      "tablet": "/product-xx99-mark-one-headphones/tablet/image-category-page-preview.jpg",
+      "desktop": "/product-xx99-mark-one-headphones/desktop/image-category-page-preview.jpg"
+    },
+    "newProduct": false,
+    "title": "XX99 Mark I Headphones",
+    "content": "XX99 Mark I Headphones content"
   }
 }
