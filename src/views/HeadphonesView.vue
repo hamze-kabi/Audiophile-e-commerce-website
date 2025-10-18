@@ -58,6 +58,8 @@ components:
       <CategoriesProduct :product="headphone" />
     </div>
     <CategoriesComp class="w-full mt-7" />
+    <BestGearComp />
+    <FooterComp />
   </main>
 </template>
 
@@ -68,6 +70,8 @@ import CategoriesProduct from '@/components/Categories Product/CategoriesProduct
 import { useLanguageStateStore } from '@/stores/languageState'
 import HeadphonesData from '@/assets/data/HeadphonesData.json'
 import CategoriesComp from '@/components/Categories/CategoriesComp.vue'
+import BestGearComp from '@/components/BestGear/BestGearComp.vue'
+import FooterComp from '@/components/Footer/FooterComp.vue'
 
 const languageState = useLanguageStateStore()
 </script>

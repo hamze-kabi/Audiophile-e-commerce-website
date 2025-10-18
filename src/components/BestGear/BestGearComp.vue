@@ -1,7 +1,7 @@
 <template>
   <div
     class="flex flex-col mx-auto mt-35 max-w-87 mb-20 md:w-180 md:max-w-full xl:w-290"
-    :class="[languageState.isFarsi ? 'xl:flex-row gap-40' : 'xl:flex-row-reverse']"
+    :class="[languageState.isFarsi ? 'xl:flex-row xl:gap-40' : 'xl:flex-row-reverse']"
   >
     <img class="rounded-lg md:hidden" src="/shared/mobile/image-best-gear.jpg" alt="best gear" />
     <img
