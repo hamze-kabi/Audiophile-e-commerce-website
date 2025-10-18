@@ -1,13 +1,24 @@
 {
-  "XX99MarkI": {
+  "ZX9 Speaker": {
     "xlFlexRowDirection": "xl:flex-row",
     "images": {
-      "mobile": "/product-xx99-mark-one-headphones/mobile/image-product.jpg",
-      "tablet": "/product-xx99-mark-one-headphones/tablet/image-category-page-preview.jpg",
-      "desktop": "/product-xx99-mark-one-headphones/desktop/image-category-page-preview.jpg"
+      "mobile": "/product-zx9-speaker/mobile/image-category-page-preview.jpg",
+      "tablet": "/product-zx9-speaker/tablet/image-category-page-preview.jpg",
+      "desktop": "/product-zx9-speaker/desktop/image-category-page-preview.jpg"
+    },
+    "newProduct": true,
+    "title": "ZX9 Speaker",
+    "content": "ZX9 Speaker content"
+  },
+  "ZX7 Speaker": {
+    "xlFlexRowDirection": "xl:flex-row-reverse",
+    "images": {
+      "mobile": "/product-zx7-speaker/mobile/image-category-page-preview.jpg",
+      "tablet": "/product-zx7-speaker/tablet/image-category-page-preview.jpg",
+      "desktop": "/product-zx7-speaker/desktop/image-category-page-preview.jpg"
     },
     "newProduct": false,
-    "title": "XX99 Mark I Headphones",
-    "content": "XX99 Mark I Headphones content"
+    "title": "ZX7 Speaker",
+    "content": "ZX7 Speaker content"
   }
 }

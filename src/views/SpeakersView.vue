@@ -9,13 +9,13 @@
     <HeaderComp class="bg-black w-full" />
     <!-- hero of categories component -->
     <CategoriesHeroComp :category="t('SPEAKERS')" />
-    <!-- production components, created using iteration through HeadphonesData.json -->
-    <!-- <div v-for="headphone in HeadphonesData" :key="headphone.title"> -->
-    <!-- <CategoriesProduct :product="'bo'" /> -->
-    <!-- </div> -->
-    <!-- <CategoriesComp class="w-full mt-7" /> -->
-    <!-- <BestGearComp /> -->
-    <!-- <FooterComp /> -->
+    <!-- production components, created using iteration through SpeakersData.json -->
+    <div v-for="speaker in SpeakersData" :key="speaker.title">
+      <CategoriesProduct :product="speaker" />
+    </div>
+    <CategoriesComp class="w-full mt-7" />
+    <BestGearComp />
+    <FooterComp />
   </main>
 </template>
 
@@ -24,7 +24,7 @@ import HeaderComp from '@/components/Header/HeaderComp.vue'
 import CategoriesHeroComp from '@/components/CategoriesHero/CategoriesHeroComp.vue'
 import CategoriesProduct from '@/components/Categories Product/CategoriesProduct.vue'
 import { useLanguageStateStore } from '@/stores/languageState'
-import HeadphonesData from '@/assets/data/HeadphonesData.json'
+import SpeakersData from '@/assets/data/SpeakersData.json'
 import CategoriesComp from '@/components/Categories/CategoriesComp.vue'
 import BestGearComp from '@/components/BestGear/BestGearComp.vue'
 import FooterComp from '@/components/Footer/FooterComp.vue'
