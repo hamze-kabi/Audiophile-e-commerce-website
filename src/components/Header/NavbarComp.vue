@@ -12,12 +12,16 @@
       to="/categories/headphones"
       >{{ t('HEADPHONES') }}</RouterLink
     >
-    <RouterLink class="hover:text-orange-500 transition-colors duration-300" to="">{{
-      t('SPEAKERS')
-    }}</RouterLink>
-    <RouterLink class="hover:text-orange-500 transition-colors duration-300" to="">{{
-      t('EARPHONES')
-    }}</RouterLink>
+    <RouterLink
+      class="hover:text-orange-500 transition-colors duration-300"
+      to="/categories/speakers"
+      >{{ t('SPEAKERS') }}</RouterLink
+    >
+    <RouterLink
+      class="hover:text-orange-500 transition-colors duration-300"
+      to="/categories/earphones"
+      >{{ t('EARPHONES') }}</RouterLink
+    >
   </nav>
 </template>
 

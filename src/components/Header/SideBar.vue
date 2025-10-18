@@ -11,8 +11,16 @@
         :image="headphonesThumbnail"
         :product="t('HEADPHONES')"
       />
-      <SideBarCategory :image="speakersThumbnail" :product="t('SPEAKERS')" />
-      <SideBarCategory :image="earphonesThumbnail" :product="t('EARPHONES')" />
+      <SideBarCategory
+        :to="'/categories/speakers'"
+        :image="speakersThumbnail"
+        :product="t('SPEAKERS')"
+      />
+      <SideBarCategory
+        :to="'/categories/earphones'"
+        :image="earphonesThumbnail"
+        :product="t('EARPHONES')"
+      />
     </section>
   </menu>
 </template>

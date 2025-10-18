@@ -52,7 +52,7 @@ components:
     <!-- header component -->
     <HeaderComp class="bg-black w-full" />
     <!-- hero of categories component -->
-    <CategoriesHeroComp />
+    <CategoriesHeroComp :category="t('HEADPHONES')" />
     <!-- production components, created using iteration through HeadphonesData.json -->
     <div v-for="headphone in HeadphonesData" :key="headphone.title">
       <CategoriesProduct :product="headphone" />
@@ -72,6 +72,8 @@ import HeadphonesData from '@/assets/data/HeadphonesData.json'
 import CategoriesComp from '@/components/Categories/CategoriesComp.vue'
 import BestGearComp from '@/components/BestGear/BestGearComp.vue'
 import FooterComp from '@/components/Footer/FooterComp.vue'
+import { useI18n } from 'vue-i18n'
 
 const languageState = useLanguageStateStore()
+const { t } = useI18n()
 </script>
