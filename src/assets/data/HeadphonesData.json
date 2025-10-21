@@ -1,5 +1,6 @@
 {
   "XX99MarkII": {
+    "id": 1,
     "xlFlexRowDirection": "xl:flex-row",
     "images": {
       "mobile": "/products/xx99markii/xx99markiimobile.jpg",
@@ -11,6 +12,7 @@
     "content": "XX99 Mark II Headphones content"
   },
   "XX59": {
+    "id": 2,
     "xlFlexRowDirection": "xl:flex-row-reverse",
     "images": {
       "mobile": "/products/xx59/xx59mobile.jpg",
@@ -22,6 +24,7 @@
     "content": "XX59 Headphones content"
   },
   "XX99MarkI": {
+    "id": 3,
     "xlFlexRowDirection": "xl:flex-row",
     "images": {
       "mobile": "/product-xx99-mark-one-headphones/mobile/image-product.jpg",

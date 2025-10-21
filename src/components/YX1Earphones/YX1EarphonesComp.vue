@@ -27,7 +27,7 @@
       <h2 :dir="{ rtl: languageState.isFarsi }" class="text-[1.8rem] tracking-wider font-semibold">
         YX1 {{ t('EARPHONES') }}
       </h2>
-      <LinkButton :style="'transparent'" />
+      <LinkButton to="/product/yx1earphones" :style="'transparent'" />
     </div>
   </div>
 </template>

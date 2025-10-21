@@ -1,5 +1,6 @@
 {
   "ZX9 Speaker": {
+    "id": 4,
     "xlFlexRowDirection": "xl:flex-row",
     "images": {
       "mobile": "/product-zx9-speaker/mobile/image-category-page-preview.jpg",
@@ -11,6 +12,7 @@
     "content": "ZX9 Speaker content"
   },
   "ZX7 Speaker": {
+    "id": 5,
     "xlFlexRowDirection": "xl:flex-row-reverse",
     "images": {
       "mobile": "/product-zx7-speaker/mobile/image-category-page-preview.jpg",

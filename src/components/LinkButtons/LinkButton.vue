@@ -1,6 +1,6 @@
 <template>
   <RouterLink
-    to=""
+    :to="to"
     class="px-7 py-3.5 h- font-bold text-sm transition-colors duration-300"
     :class="[bg, textColor, border, bgOnHover, textColorOnHover]"
     >{{ t('SEE PRODUCT') }}</RouterLink
@@ -18,6 +18,7 @@ const props = defineProps({
     type: String,
     default: 'orange',
   },
+  to: String,
 })
 
 const { t } = useI18n()
