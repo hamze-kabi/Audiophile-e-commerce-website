@@ -34,7 +34,7 @@
     >
       {{ t('hero content') }}
     </p>
-    <LinkButton to="/product/xx99markiiheadphones" />
+    <LinkButton to="/product/XX99MarkII" />
   </main>
 </template>
 

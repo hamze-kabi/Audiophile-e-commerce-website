@@ -1,18 +1,24 @@
 {
   "XX99MarkII": {
     "id": 1,
+    "slug": "XX99MarkII",
     "xlFlexRowDirection": "xl:flex-row",
     "images": {
       "mobile": "/products/xx99markii/xx99markiimobile.jpg",
       "tablet": "/products/xx99markii/xx99markiitablet.jpg",
-      "desktop": "/products/xx99markii/xx99markiidesktop.jpg"
+      "desktop": "/products/xx99markii/xx99markiidesktop.jpg",
+      "productPageMobile": "/product-xx99-mark-two-headphones/mobile/image-product.jpg",
+      "productPageTablet": "/product-xx99-mark-two-headphones/tablet/image-product.jpg",
+      "productPageDesktop": "/product-xx99-mark-two-headphones/desktop/image-product.jpg"
     },
     "newProduct": true,
     "title": "XX99 Mark II Headphones",
-    "content": "XX99 Mark II Headphones content"
+    "content": "XX99 Mark II Headphones content",
+    "price": 250
   },
   "XX59": {
     "id": 2,
+    "slug": "XX59",
     "xlFlexRowDirection": "xl:flex-row-reverse",
     "images": {
       "mobile": "/products/xx59/xx59mobile.jpg",
@@ -21,9 +27,11 @@
     },
     "newProduct": false,
     "title": "XX59 Headphones",
-    "content": "XX59 Headphones content"
+    "content": "XX59 Headphones content",
+    "price": 150
   },
   "XX99MarkI": {
+    "slug": "XX99MarkI",
     "id": 3,
     "xlFlexRowDirection": "xl:flex-row",
     "images": {
@@ -33,6 +41,7 @@
     },
     "newProduct": false,
     "title": "XX99 Mark I Headphones",
-    "content": "XX99 Mark I Headphones content"
+    "content": "XX99 Mark I Headphones content",
+    "price": 200
   }
 }

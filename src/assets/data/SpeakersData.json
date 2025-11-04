@@ -1,6 +1,7 @@
 {
   "ZX9 Speaker": {
     "id": 4,
+    "slug": "ZX9 Speaker",
     "xlFlexRowDirection": "xl:flex-row",
     "images": {
       "mobile": "/product-zx9-speaker/mobile/image-category-page-preview.jpg",
@@ -9,10 +10,12 @@
     },
     "newProduct": true,
     "title": "ZX9 Speaker",
-    "content": "ZX9 Speaker content"
+    "content": "ZX9 Speaker content",
+    "price": 480
   },
   "ZX7 Speaker": {
     "id": 5,
+    "slug": "ZX7 Speaker",
     "xlFlexRowDirection": "xl:flex-row-reverse",
     "images": {
       "mobile": "/product-zx7-speaker/mobile/image-category-page-preview.jpg",
@@ -21,6 +24,7 @@
     },
     "newProduct": false,
     "title": "ZX7 Speaker",
-    "content": "ZX7 Speaker content"
+    "content": "ZX7 Speaker content",
+    "price": 350
   }
 }

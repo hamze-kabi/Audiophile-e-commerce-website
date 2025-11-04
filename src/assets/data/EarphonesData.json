@@ -1,6 +1,7 @@
 {
   "YX1WirelessEarphones": {
     "id": 6,
+    "slug": "YX1WirelessEarphones",
     "xlFlexRowDirection": "xl:flex-row",
     "images": {
       "mobile": "/product-yx1-earphones/mobile/image-category-page-preview.jpg",
@@ -9,6 +10,7 @@
     },
     "newProduct": true,
     "title": "YX1 Wireless Earphones",
-    "content": "YX1 Wireless Earphones content"
+    "content": "YX1 Wireless Earphones content",
+    "price": 80
   }
 }
