@@ -14,7 +14,15 @@
     "newProduct": true,
     "title": "XX99 Mark II Headphones",
     "content": "XX99 Mark II Headphones content",
-    "price": 250
+    "price": 250,
+    "featuresContent": "XX99 Mark II Headphones features content",
+    "inTheBoxContent": {
+      "item1": { "name": "Headphone unit", "qty": 1 },
+      "item2": { "name": "Replacement earcups", "qty": 2 },
+      "item3": { "name": "User manual", "qty": 1 },
+      "item4": { "name": "3.5mm 5m audio cable", "qty": 1 },
+      "item5": { "name": "Travel bag", "qty": 1 }
+    }
   },
   "XX59": {
     "id": 2,
@@ -28,7 +36,14 @@
     "newProduct": false,
     "title": "XX59 Headphones",
     "content": "XX59 Headphones content",
-    "price": 150
+    "price": 150,
+    "featuresContent": "XX59 Headphones features content",
+    "inTheBoxContent": {
+      "item1": { "name": "Headphone unit", "qty": 1 },
+      "item2": { "name": "Replacement earcups", "qty": 2 },
+      "item3": { "name": "User manual", "qty": 1 },
+      "item4": { "name": "3.5mm 5m audio cable", "qty": 1 }
+    }
   },
   "XX99MarkI": {
     "slug": "XX99MarkI",
@@ -42,6 +57,13 @@
     "newProduct": false,
     "title": "XX99 Mark I Headphones",
     "content": "XX99 Mark I Headphones content",
-    "price": 200
+    "price": 200,
+    "featuresContent": "XX99 Mark I Headphones features content",
+    "inTheBoxContent": {
+      "item1": { "name": "Headphone unit", "qty": 1 },
+      "item2": { "name": "Replacement earcups", "qty": 2 },
+      "item3": { "name": "User manual", "qty": 1 },
+      "item4": { "name": "3.5mm 5m audio cable", "qty": 1 }
+    }
   }
 }

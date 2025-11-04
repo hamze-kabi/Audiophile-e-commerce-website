@@ -11,6 +11,14 @@
     "newProduct": true,
     "title": "YX1 Wireless Earphones",
     "content": "YX1 Wireless Earphones content",
-    "price": 80
+    "price": 80,
+    "featuresContent": "YX1 Wireless Earphones features content",
+    "inTheBoxContent": {
+      "item1": { "name": "Earphone unit", "qty": 2 },
+      "item2": { "name": "Multi-size earplugs", "qty": 6 },
+      "item3": { "name": "User manual", "qty": 1 },
+      "item4": { "name": "USB-C charging cable", "qty": 1 },
+      "item5": { "name": "Travel pouch", "qty": 1 }
+    }
   }
 }

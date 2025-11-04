@@ -11,7 +11,15 @@
     "newProduct": true,
     "title": "ZX9 Speaker",
     "content": "ZX9 Speaker content",
-    "price": 480
+    "price": 480,
+    "featuresContent": "ZX9 Speaker features content",
+    "inTheBoxContent": {
+      "item1": { "name": "Speaker unit", "qty": 2 },
+      "item2": { "name": "Speaker cloth panel", "qty": 2 },
+      "item3": { "name": "User manual", "qty": 1 },
+      "item4": { "name": "3.5mm 10m audio cable", "qty": 1 },
+      "item5": { "name": "10m optical cable", "qty": 1 }
+    }
   },
   "ZX7 Speaker": {
     "id": 5,
@@ -25,6 +33,14 @@
     "newProduct": false,
     "title": "ZX7 Speaker",
     "content": "ZX7 Speaker content",
-    "price": 350
+    "price": 350,
+    "featuresContent": "ZX7 Speaker features content",
+    "inTheBoxContent": {
+      "item1": { "name": "Speaker unit", "qty": 2 },
+      "item2": { "name": "Speaker cloth panel", "qty": 2 },
+      "item3": { "name": "User manual", "qty": 1 },
+      "item4": { "name": "3.5mm 10m audio cable", "qty": 1 },
+      "item5": { "name": "7.5m optical cable", "qty": 1 }
+    }
   }
 }

@@ -36,8 +36,16 @@
       </p>
       <p class="text-gray-600">{{ t(props.product.content) }}</p>
       <PriceComp :price="props.product.price" />
-      <NumberOfOrders />
-      <AddToCartBtn />
+      <!-- order section -->
+      <section class="flex">
+        <NumberOfOrders />
+        <AddToCartBtn />
+      </section>
+      <!-- features + in the box -->
+      <section class="flex flex-col">
+        <FeaturesComp :product="props.product" />
+        <InTheBoxComp :product="props.product" />
+      </section>
     </section>
   </main>
 </template>
@@ -50,6 +58,8 @@ import LinkButton from '../LinkButtons/LinkButton.vue'
 import PriceComp from './PriceComp.vue'
 import NumberOfOrders from './NumberOfOrders.vue'
 import AddToCartBtn from './AddToCartBtn.vue'
+import FeaturesComp from './FeaturesComp.vue'
+import InTheBoxComp from './InTheBoxComp.vue'
 
 const props = defineProps({
   product: {
