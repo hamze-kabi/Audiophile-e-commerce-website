@@ -19,6 +19,23 @@
       "item3": { "name": "User manual", "qty": 1 },
       "item4": { "name": "3.5mm 10m audio cable", "qty": 1 },
       "item5": { "name": "10m optical cable", "qty": 1 }
+    },
+    "galleryImages": {
+      "image1": {
+        "mobile": "/product-zx9-speaker/mobile/image-gallery-1.jpg",
+        "tablet": "/product-zx9-speaker/tablet/image-gallery-1.jpg",
+        "desktop": "/product-zx9-speaker/desktop/image-gallery-1.jpg"
+      },
+      "image2": {
+        "mobile": "/product-zx9-speaker/mobile/image-gallery-2.jpg",
+        "tablet": "/product-zx9-speaker/tablet/image-gallery-2.jpg",
+        "desktop": "/product-zx9-speaker/desktop/image-gallery-2.jpg"
+      },
+      "image3": {
+        "mobile": "/product-zx9-speaker/mobile/image-gallery-3.jpg",
+        "tablet": "/product-zx9-speaker/tablet/image-gallery-3.jpg",
+        "desktop": "/product-zx9-speaker/desktop/image-gallery-3.jpg"
+      }
     }
   },
   "ZX7 Speaker": {
@@ -41,6 +58,23 @@
       "item3": { "name": "User manual", "qty": 1 },
       "item4": { "name": "3.5mm 10m audio cable", "qty": 1 },
       "item5": { "name": "7.5m optical cable", "qty": 1 }
+    },
+    "galleryImages": {
+      "image1": {
+        "mobile": "/product-zx7-speaker/mobile/image-gallery-1.jpg",
+        "tablet": "/product-zx7-speaker/tablet/image-gallery-1.jpg",
+        "desktop": "/product-zx7-speaker/desktop/image-gallery-1.jpg"
+      },
+      "image2": {
+        "mobile": "/product-zx7-speaker/mobile/image-gallery-2.jpg",
+        "tablet": "/product-zx7-speaker/tablet/image-gallery-2.jpg",
+        "desktop": "/product-zx7-speaker/desktop/image-gallery-2.jpg"
+      },
+      "image3": {
+        "mobile": "/product-zx7-speaker/mobile/image-gallery-3.jpg",
+        "tablet": "/product-zx7-speaker/tablet/image-gallery-3.jpg",
+        "desktop": "/product-zx7-speaker/desktop/image-gallery-3.jpg"
+      }
     }
   }
 }

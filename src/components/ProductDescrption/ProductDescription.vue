@@ -46,6 +46,8 @@
         <FeaturesComp :product="props.product" />
         <InTheBoxComp :product="props.product" />
       </section>
+      <!-- gallery -->
+      <GalleryComp :product="props.product" />
     </section>
   </main>
 </template>
@@ -60,6 +62,7 @@ import NumberOfOrders from './NumberOfOrders.vue'
 import AddToCartBtn from './AddToCartBtn.vue'
 import FeaturesComp from './FeaturesComp.vue'
 import InTheBoxComp from './InTheBoxComp.vue'
+import GalleryComp from './GalleryComp.vue'
 
 const props = defineProps({
   product: {

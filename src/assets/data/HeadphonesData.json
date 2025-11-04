@@ -22,6 +22,23 @@
       "item3": { "name": "User manual", "qty": 1 },
       "item4": { "name": "3.5mm 5m audio cable", "qty": 1 },
       "item5": { "name": "Travel bag", "qty": 1 }
+    },
+    "galleryImages": {
+      "image1": {
+        "mobile": "/product-xx99-mark-two-headphones/mobile/image-gallery-1.jpg",
+        "tablet": "/product-xx99-mark-two-headphones/tablet/image-gallery-1.jpg",
+        "desktop": "/product-xx99-mark-two-headphones/desktop/image-gallery-1.jpg"
+      },
+      "image2": {
+        "mobile": "/product-xx99-mark-two-headphones/mobile/image-gallery-2.jpg",
+        "tablet": "/product-xx99-mark-two-headphones/tablet/image-gallery-2.jpg",
+        "desktop": "/product-xx99-mark-two-headphones/desktop/image-gallery-2.jpg"
+      },
+      "image3": {
+        "mobile": "/product-xx99-mark-two-headphones/mobile/image-gallery-3.jpg",
+        "tablet": "/product-xx99-mark-two-headphones/tablet/image-gallery-3.jpg",
+        "desktop": "/product-xx99-mark-two-headphones/desktop/image-gallery-3.jpg"
+      }
     }
   },
   "XX59": {
@@ -43,6 +60,23 @@
       "item2": { "name": "Replacement earcups", "qty": 2 },
       "item3": { "name": "User manual", "qty": 1 },
       "item4": { "name": "3.5mm 5m audio cable", "qty": 1 }
+    },
+    "galleryImages": {
+      "image1": {
+        "mobile": "/product-xx59-headphones/mobile/image-gallery-1.jpg",
+        "tablet": "/product-xx59-headphones/tablet/image-gallery-1.jpg",
+        "desktop": "/product-xx59-headphones/desktop/image-gallery-1.jpg"
+      },
+      "image2": {
+        "mobile": "/product-xx59-headphones/mobile/image-gallery-2.jpg",
+        "tablet": "/product-xx59-headphones/tablet/image-gallery-2.jpg",
+        "desktop": "/product-xx59-headphones/desktop/image-gallery-2.jpg"
+      },
+      "image3": {
+        "mobile": "/product-xx59-headphones/mobile/image-gallery-3.jpg",
+        "tablet": "/product-xx59-headphones/tablet/image-gallery-3.jpg",
+        "desktop": "/product-xx59-headphones/desktop/image-gallery-3.jpg"
+      }
     }
   },
   "XX99MarkI": {
@@ -64,6 +98,23 @@
       "item2": { "name": "Replacement earcups", "qty": 2 },
       "item3": { "name": "User manual", "qty": 1 },
       "item4": { "name": "3.5mm 5m audio cable", "qty": 1 }
+    },
+    "galleryImages": {
+      "image1": {
+        "mobile": "/product-xx99-mark-one-headphones/mobile/image-gallery-1.jpg",
+        "tablet": "/product-xx99-mark-one-headphones/tablet/image-gallery-1.jpg",
+        "desktop": "/product-xx99-mark-one-headphones/desktop/image-gallery-1.jpg"
+      },
+      "image2": {
+        "mobile": "/product-xx99-mark-one-headphones/mobile/image-gallery-2.jpg",
+        "tablet": "/product-xx99-mark-one-headphones/tablet/image-gallery-2.jpg",
+        "desktop": "/product-xx99-mark-one-headphones/desktop/image-gallery-2.jpg"
+      },
+      "image3": {
+        "mobile": "/product-xx99-mark-one-headphones/mobile/image-gallery-3.jpg",
+        "tablet": "/product-xx99-mark-one-headphones/tablet/image-gallery-3.jpg",
+        "desktop": "/product-xx99-mark-one-headphones/desktop/image-gallery-3.jpg"
+      }
     }
   }
 }

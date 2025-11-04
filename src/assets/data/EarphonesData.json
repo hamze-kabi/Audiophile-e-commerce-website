@@ -19,6 +19,23 @@
       "item3": { "name": "User manual", "qty": 1 },
       "item4": { "name": "USB-C charging cable", "qty": 1 },
       "item5": { "name": "Travel pouch", "qty": 1 }
+    },
+    "galleryImages": {
+      "image1": {
+        "mobile": "/product-yx1-earphones/mobile/image-gallery-1.jpg",
+        "tablet": "/product-yx1-earphones/tablet/image-gallery-1.jpg",
+        "desktop": "/product-yx1-earphones/desktop/image-gallery-1.jpg"
+      },
+      "image2": {
+        "mobile": "/product-yx1-earphones/mobile/image-gallery-2.jpg",
+        "tablet": "/product-yx1-earphones/tablet/image-gallery-2.jpg",
+        "desktop": "/product-yx1-earphones/desktop/image-gallery-2.jpg"
+      },
+      "image3": {
+        "mobile": "/product-yx1-earphones/mobile/image-gallery-3.jpg",
+        "tablet": "/product-yx1-earphones/tablet/image-gallery-3.jpg",
+        "desktop": "/product-yx1-earphones/desktop/image-gallery-3.jpg"
+      }
     }
   }
 }
