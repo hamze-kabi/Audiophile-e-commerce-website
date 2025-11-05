@@ -3,17 +3,17 @@
     class="flex flex-col items-center justify-center gap-26 pt-20 md:flex-row md:gap-10 md:px-5 md:mt-10 xl:gap-30"
   >
     <SideBarCategory
-      :to="'categories/headphones'"
+      :to="'/categories/headphones'"
       :image="headphonesThumbnail"
       :product="t('HEADPHONES')"
     />
     <SideBarCategory
-      :to="'categories/speakers'"
+      :to="'/categories/speakers'"
       :image="speakersThumbnail"
       :product="t('SPEAKERS')"
     />
     <SideBarCategory
-      :to="'categories/earphones'"
+      :to="'/categories/earphones'"
       :image="earphonesThumbnail"
       :product="t('EARPHONES')"
     />

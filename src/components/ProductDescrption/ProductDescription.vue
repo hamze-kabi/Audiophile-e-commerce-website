@@ -8,11 +8,11 @@
   >
     <!-- images for mobile, md and xl -->
     <picture>
-      <source media="(min-width:1440px)" :srcset="props.product.images.productPageDesktop" />
-      <source media="(min-width:768px)" :srcset="props.product.images.productPageTablet" />
+      <source media="(min-width:1440px)" :srcset="props.product.images.desktop" />
+      <source media="(min-width:768px)" :srcset="props.product.images.Tablet" />
       <img
         class="w-80 rounded-2xl md:w-170 xl:w-135"
-        :src="props.product.images.productPageMobile"
+        :src="props.product.images.Mobile"
         alt="XX99 Mark II Headphones"
       />
     </picture>

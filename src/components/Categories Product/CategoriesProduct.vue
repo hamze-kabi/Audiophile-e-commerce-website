@@ -34,7 +34,7 @@
         {{ t(props.product.title) }}
       </p>
       <p class="text-gray-600">{{ t(props.product.content) }}</p>
-      <LinkButton />
+      <LinkButton :to="'/product/' + props.product.slug" />
     </section>
   </main>
 </template>
