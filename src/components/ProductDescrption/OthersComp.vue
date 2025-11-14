@@ -1,59 +1,46 @@
-<template></template>
+<template>
+  <div v-for="id in chosenRandomIds" :key="id">
+    <OthersCard :receivedId="id" />
+  </div>
+</template>
 
 <script setup>
 import { useRoute } from 'vue-router'
 import HeadphonesData from '@/assets/data/HeadphonesData.json'
 import SpeakersData from '@/assets/data/SpeakersData.json'
 import EarphonesData from '@/assets/data/EarphonesData.json'
-import { ref } from 'vue'
+import OthersCard from './OthersCard.vue'
 
 const route = useRoute()
 const slug = route.params.slug
-let totalNumberOfProducts = 0
 let currentProductId
-let IdsOfProductsExcludingCurrent = []
-const selectedIds = ref([])
+let idsOfProductsExcludingCurrent = []
+let chosenRandomIds = []
 
-// gets the id of the product on the current page on the display
-const findCurrentProductId = function () {
+// extract ids of products excluding the displaying product
+const extractIdsOfProductsExcludingCurrent = function () {
   ;[HeadphonesData, SpeakersData, EarphonesData].forEach((data) => {
+    // find id of current product
     if (data[slug]) {
       currentProductId = data[slug].id
-      return
     }
+
+    Object.values(data).forEach((product) => {
+      if (product.id !== currentProductId) {
+        idsOfProductsExcludingCurrent.push(product.id)
+      }
+    })
   })
 }
 
-// gets the total number of products
-const getProductsCount = function () {
-  ;[HeadphonesData, SpeakersData, EarphonesData].forEach((data) => {
-    totalNumberOfProducts += Object.values(data).length
-  })
+// shuffles idsOfProductsExcludingCurrent and picks the first three
+const chooseRandomProducts = function () {
+  let shuffledIdsOfProductsExcludingCurrent = idsOfProductsExcludingCurrent.sort(
+    () => Math.random() - 0.5,
+  )
+  chosenRandomIds = shuffledIdsOfProductsExcludingCurrent.slice(0, 3)
 }
 
-// adds ids of all products to idsOfProductsExcludingCurrent
-const createIdsOfProductsExcludingCurrent = function () {
-  // create an array of ids of products
-  const arr = Array.from({ length: totalNumberOfProducts }, (_, i) => i + 1)
-
-  // exclude the id of the current product
-  IdsOfProductsExcludingCurrent = arr.filter((id) => id != currentProductId)
-}
-
-// chooses random products from IdsOfProductsExcludingCurrent, the arguement count determines number of random choices
-const chooseRandomProducts = function (count) {
-  const randomIds = []
-  while (randomIds.length <= count) {
-    let randomId = Math.floor(Math.random() * totalNumberOfProducts)
-    if (!randomIds.includes(randomId)) {
-      randomIds.push(randomId)
-    }
-  }
-  selectedIds.value = randomIds
-}
-
-findCurrentProductId()
-getProductsCount()
-createIdsOfProductsExcludingCurrent()
-chooseRandomProducts(3)
+extractIdsOfProductsExcludingCurrent()
+chooseRandomProducts()
 </script>

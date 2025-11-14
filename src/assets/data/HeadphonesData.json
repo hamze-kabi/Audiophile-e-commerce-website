@@ -39,6 +39,11 @@
         "tablet": "/product-xx99-mark-two-headphones/tablet/image-gallery-3.jpg",
         "desktop": "/product-xx99-mark-two-headphones/desktop/image-gallery-3.jpg"
       }
+    },
+    "otherImages": {
+      "mobile": "/product-xx99-mark-two-headphones/mobile/image-product.jpg",
+      "tablet": "/product-xx99-mark-two-headphones/tablet/image-product.jpg",
+      "desktop": "/product-xx99-mark-two-headphones/desktop/image-product.jpg"
     }
   },
   "XX59": {
@@ -77,6 +82,11 @@
         "tablet": "/product-xx59-headphones/tablet/image-gallery-3.jpg",
         "desktop": "/product-xx59-headphones/desktop/image-gallery-3.jpg"
       }
+    },
+    "otherImages": {
+      "mobile": "/product-xx59-headphones/mobile/image-product.jpg",
+      "tablet": "/product-xx59-headphones/tablet/image-product.jpg",
+      "desktop": "/product-xx59-headphones/desktop/image-category-page-preview.jpg"
     }
   },
   "XX99MarkI": {
@@ -115,6 +125,11 @@
         "tablet": "/product-xx99-mark-one-headphones/tablet/image-gallery-3.jpg",
         "desktop": "/product-xx99-mark-one-headphones/desktop/image-gallery-3.jpg"
       }
+    },
+    "otherImages": {
+      "mobile": "/product-xx99-mark-one-headphones/mobile/image-product.jpg",
+      "tablet": "/product-xx99-mark-one-headphones/tablet/image-product.jpg",
+      "desktop": "/product-xx99-mark-one-headphones/desktop/image-product.jpg"
     }
   }
 }

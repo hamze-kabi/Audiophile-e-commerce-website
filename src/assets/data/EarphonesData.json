@@ -36,6 +36,11 @@
         "tablet": "/product-yx1-earphones/tablet/image-gallery-3.jpg",
         "desktop": "/product-yx1-earphones/desktop/image-gallery-3.jpg"
       }
+    },
+    "otherImages": {
+      "mobile": "/product-yx1-earphones/mobile/image-product.jpg",
+      "tablet": "/product-yx1-earphones/tablet/image-product.jpg",
+      "desktop": "/product-yx1-earphones/desktop/image-product.jpg"
     }
   }
 }

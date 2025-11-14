@@ -36,6 +36,11 @@
         "tablet": "/product-zx9-speaker/tablet/image-gallery-3.jpg",
         "desktop": "/product-zx9-speaker/desktop/image-gallery-3.jpg"
       }
+    },
+    "otherImages": {
+      "mobile": "/product-zx9-speaker/mobile/image-product.jpg",
+      "tablet": "/product-zx9-speaker/tablet/image-product.jpg",
+      "desktop": "/product-zx9-speaker/desktop/image-product.jpg"
     }
   },
   "ZX7Speaker": {
@@ -75,6 +80,11 @@
         "tablet": "/product-zx7-speaker/tablet/image-gallery-3.jpg",
         "desktop": "/product-zx7-speaker/desktop/image-gallery-3.jpg"
       }
+    },
+    "otherImages": {
+      "mobile": "/product-zx7-speaker/mobile/image-product.jpg",
+      "tablet": "/product-zx7-speaker/tablet/image-product.jpg",
+      "desktop": "/product-zx7-speaker/desktop/image-product.jpg"
     }
   }
 }
