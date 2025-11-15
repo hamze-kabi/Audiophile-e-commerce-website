@@ -1,8 +1,18 @@
 <template>
-  <div class="flex items-center justify-center gap-5">
-    <button @click="orderQuantity > 1 && orderQuantity--">-</button>
+  <div class="flex items-center justify-center gap-7 bg-gray-200 px-5">
+    <button
+      class="text-gray-500 hover:text-orange-500 hover:font-bold transition-all duration-200 cursor-pointer"
+      @click="orderQuantity > 1 && orderQuantity--"
+    >
+      -
+    </button>
     <p>{{ translatedOrderQuantity }}</p>
-    <button @click="orderQuantity++">+</button>
+    <button
+      class="text-gray-500 hover:text-orange-500 hover:font-bold transition-all duration-200 cursor-pointer"
+      @click="orderQuantity++"
+    >
+      +
+    </button>
   </div>
 </template>
 

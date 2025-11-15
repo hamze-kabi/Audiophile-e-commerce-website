@@ -1,46 +1,49 @@
 <template>
-  <!-- container of images and text section -->
-  <!-- :class="props.product.xlFlexRowDirection" -->
-
   <main
     :dir="languageState.isFarsi ? 'rtl' : 'ltr'"
-    class="flex flex-col items-center justify-center mt-15 gap-4 md:gap-10 xl:gap-30 xl:mb-20"
+    class="flex flex-col items-center justify-center"
   >
-    <!-- images for mobile, md and xl -->
-    <picture>
-      <source media="(min-width:1440px)" :srcset="props.product.images.desktop" />
-      <source media="(min-width:768px)" :srcset="props.product.images.Tablet" />
-      <img
-        class="w-80 rounded-2xl md:w-170 xl:w-135"
-        :src="props.product.images.Mobile"
-        alt="XX99 Mark II Headphones"
-      />
-    </picture>
+    <!-- product image + overview section + add to cart -->
+    <div class="flex-flex-col items-center justify-center">
+      <!-- product image for different screen sizes -->
+      <picture>
+        <source media="(min-width:1440px)" :srcset="props.product.images.desktop" />
+        <source media="(min-width:768px)" :srcset="props.product.images.tablet" />
+        <img
+          class="w-90/100 mx-auto my-5"
+          :src="props.product.images.mobile"
+          :alt="props.product.slug"
+        />
+      </picture>
+      <!-- overview -->
+      <section class="flex flex-col mx-5 gap-5">
+        <p
+          v-if="props.product.newProduct"
+          :class="[languageState.isFarsi ? 'text-xl' : '']"
+          class="text-orange-600 tracking-[0.75rem]"
+        >
+          {{ t('new product') }}
+        </p>
+        <p
+          :dir="languageState.isFarsi ? 'rtl' : 'ltr'"
+          :class="[languageState.isFarsi ? '' : 'font-bold']"
+          class="text-3xl w-50 md:w-full md:text-4xl"
+        >
+          {{ t(props.product.title) }}
+        </p>
+        <p class="text-gray-600">{{ t(props.product.content) }}</p>
+        <PriceComp :price="props.product.price" />
+        <!-- order section -->
+        <section class="flex gap-5">
+          <NumberOfOrders />
+          <AddToCartBtn />
+        </section>
+      </section>
+    </div>
     <!-- text section -->
     <section
-      class="flex flex-col text-center items-center justify-center gap-4 w-85 md:w-4/5 xl:w-120 xl:gap-7 xl:items-start xl:text-start"
+      class="hidden flex flex-col text-center items-center justify-center gap-4 w-85 md:w-4/5 xl:w-120 xl:gap-7 xl:items-start xl:text-start"
     >
-      <p
-        v-if="props.product.newProduct"
-        :class="[languageState.isFarsi ? 'text-xl' : '']"
-        class="text-orange-600 tracking-[0.75rem]"
-      >
-        {{ t('new product') }}
-      </p>
-      <p
-        :dir="languageState.isFarsi ? 'rtl' : 'ltr'"
-        :class="[languageState.isFarsi ? '' : 'font-bold']"
-        class="text-3xl w-50 md:w-full md:text-4xl"
-      >
-        {{ t(props.product.title) }}
-      </p>
-      <p class="text-gray-600">{{ t(props.product.content) }}</p>
-      <PriceComp :price="props.product.price" />
-      <!-- order section -->
-      <section class="flex">
-        <NumberOfOrders />
-        <AddToCartBtn />
-      </section>
       <!-- features + in the box -->
       <section class="flex flex-col">
         <FeaturesComp :product="props.product" />
@@ -50,6 +53,9 @@
       <GalleryComp :product="props.product" />
     </section>
     <OthersComp />
+    <CategoriesComp />
+    <BestGearComp />
+    <FooterComp />
   </main>
 </template>
 
@@ -65,6 +71,9 @@ import FeaturesComp from './FeaturesComp.vue'
 import InTheBoxComp from './InTheBoxComp.vue'
 import GalleryComp from './GalleryComp.vue'
 import OthersComp from './OthersComp.vue'
+import CategoriesComp from '../Categories/CategoriesComp.vue'
+import BestGearComp from '../BestGear/BestGearComp.vue'
+import FooterComp from '../Footer/FooterComp.vue'
 
 const props = defineProps({
   product: {

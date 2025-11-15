@@ -1,9 +1,11 @@
 <template>
   <!-- two dollar signs are written for both languages, dir does not do the job -->
-  <p>
-    <span v-show="!languageState.isFarsi">$</span> {{ translatedNum }}
-    <span v-show="languageState.isFarsi">$</span>
-  </p>
+  <div class="font-bold">
+    <p>
+      <span v-show="!languageState.isFarsi">$</span> {{ translatedNum }}
+      <span v-show="languageState.isFarsi">$</span>
+    </p>
+  </div>
 </template>
 
 <script setup>
