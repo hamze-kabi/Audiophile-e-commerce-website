@@ -1,22 +1,22 @@
 <template>
   <main
     :dir="languageState.isFarsi ? 'rtl' : 'ltr'"
-    class="flex flex-col items-center justify-center"
+    class="flex flex-col items-center justify-center gap-10"
   >
-    <!-- product image + overview section + add to cart -->
-    <div class="flex-flex-col items-center justify-center">
+    <!-- product image + overview section -->
+    <div class="flex flex-col items-center justify-center md:flex-row xl:mx-30">
       <!-- product image for different screen sizes -->
       <picture>
-        <source media="(min-width:1440px)" :srcset="props.product.images.desktop" />
-        <source media="(min-width:768px)" :srcset="props.product.images.tablet" />
+        <source media="(min-width:1440px)" :srcset="props.product.images.productPageDesktop" />
+        <source media="(min-width:768px)" :srcset="props.product.images.productPageTablet" />
         <img
-          class="w-90/100 mx-auto my-5"
-          :src="props.product.images.mobile"
+          class="w-90/100 mx-auto my-5 basis-1/3"
+          :src="props.product.images.productPageMobile"
           :alt="props.product.slug"
         />
       </picture>
       <!-- overview -->
-      <section class="flex flex-col mx-5 gap-5">
+      <section class="flex flex-col mx-5 gap-5 basis-2/3">
         <p
           v-if="props.product.newProduct"
           :class="[languageState.isFarsi ? 'text-xl' : '']"
@@ -41,21 +41,22 @@
       </section>
     </div>
     <!-- text section -->
-    <section
+
+    <!-- <section
       class="hidden flex flex-col text-center items-center justify-center gap-4 w-85 md:w-4/5 xl:w-120 xl:gap-7 xl:items-start xl:text-start"
-    >
-      <!-- features + in the box -->
-      <section class="flex flex-col">
-        <FeaturesComp :product="props.product" />
-        <InTheBoxComp :product="props.product" />
-      </section>
-      <!-- gallery -->
-      <GalleryComp :product="props.product" />
+    > -->
+    <!-- features + in the box -->
+    <section class="flex flex-col mx-5 gap-20 xl:flex-row xl:mx-40">
+      <FeaturesComp class="basis-2/3" :product="props.product" />
+      <InTheBoxComp class="basis-1/3" :product="props.product" />
     </section>
-    <OthersComp />
-    <CategoriesComp />
-    <BestGearComp />
-    <FooterComp />
+    <!-- gallery -->
+    <GalleryComp :product="props.product" />
+    <!-- </section> -->
+    <!-- <OthersComp /> -->
+    <!-- <CategoriesComp /> -->
+    <!-- <BestGearComp /> -->
+    <!-- <FooterComp /> -->
   </main>
 </template>
 

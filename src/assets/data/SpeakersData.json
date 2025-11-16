@@ -6,7 +6,10 @@
     "images": {
       "mobile": "/product-zx9-speaker/mobile/image-category-page-preview.jpg",
       "tablet": "/product-zx9-speaker/tablet/image-category-page-preview.jpg",
-      "desktop": "/product-zx9-speaker/desktop/image-category-page-preview.jpg"
+      "desktop": "/product-zx9-speaker/desktop/image-category-page-preview.jpg",
+      "productPageMobile": "/product-zx9-speaker/mobile/image-product.jpg",
+      "productPageTablet": "/product-zx9-speaker/tablet/image-product.jpg",
+      "productPageDesktop": "/product-zx9-speaker/desktop/image-product.jpg"
     },
     "newProduct": true,
     "title": "ZX9 Speaker",
@@ -50,7 +53,10 @@
     "images": {
       "mobile": "/product-zx7-speaker/mobile/image-category-page-preview.jpg",
       "tablet": "/product-zx7-speaker/tablet/image-category-page-preview.jpg",
-      "desktop": "/product-zx7-speaker/desktop/image-category-page-preview.jpg"
+      "desktop": "/product-zx7-speaker/desktop/image-category-page-preview.jpg",
+      "productPageMobile": "/product-zx7-speaker/mobile/image-product.jpg",
+      "productPageTablet": "/product-zx7-speaker/tablet/image-product.jpg",
+      "productPageDesktop": "/product-zx7-speaker/desktop/image-product.jpg"
     },
     "newProduct": false,
     "title": "ZX7 Speaker",

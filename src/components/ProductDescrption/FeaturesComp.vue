@@ -1,7 +1,7 @@
 <template>
-  <div class="flex flex-col">
-    <h4>{{ t('features') }}</h4>
-    <p>{{ t(props.product.featuresContent) }}</p>
+  <div class="flex flex-col gap-5">
+    <h4 class="text-2xl font-bold">{{ t('features') }}</h4>
+    <p class="text-gray-600">{{ t(props.product.featuresContent) }}</p>
   </div>
 </template>
 

@@ -6,7 +6,10 @@
     "images": {
       "mobile": "/product-yx1-earphones/mobile/image-category-page-preview.jpg",
       "tablet": "/product-yx1-earphones/tablet/image-category-page-preview.jpg",
-      "desktop": "/product-yx1-earphones/desktop/image-category-page-preview.jpg"
+      "desktop": "/product-yx1-earphones/desktop/image-category-page-preview.jpg",
+      "productPageMobile": "/product-yx1-earphones/mobile/image-product.jpg",
+      "productPageTablet": "/product-yx1-earphones/tablet/image-product.jpg",
+      "productPageDesktop": "/product-yx1-earphones/desktop/image-product.jpg"
     },
     "newProduct": true,
     "title": "YX1 Wireless Earphones",

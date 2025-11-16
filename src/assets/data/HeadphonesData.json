@@ -53,7 +53,10 @@
     "images": {
       "mobile": "/products/xx59/xx59mobile.jpg",
       "tablet": "/products/xx59/xx59tablet.jpg",
-      "desktop": "/products/xx59/xx59desktop.jpg"
+      "desktop": "/products/xx59/xx59desktop.jpg",
+      "productPageMobile": "/product-xx59-headphones/mobile/image-product.jpg",
+      "productPageTablet": "/product-xx59-headphones/tablet/image-product.jpg",
+      "productPageDesktop": "/product-xx59-headphones/desktop/image-category-page-preview.jpg"
     },
     "newProduct": false,
     "title": "XX59 Headphones",
@@ -96,7 +99,10 @@
     "images": {
       "mobile": "/product-xx99-mark-one-headphones/mobile/image-product.jpg",
       "tablet": "/product-xx99-mark-one-headphones/tablet/image-category-page-preview.jpg",
-      "desktop": "/product-xx99-mark-one-headphones/desktop/image-category-page-preview.jpg"
+      "desktop": "/product-xx99-mark-one-headphones/desktop/image-category-page-preview.jpg",
+      "productPageMobile": "/product-xx99-mark-one-headphones/mobile/image-product.jpg",
+      "productPageTablet": "/product-xx99-mark-one-headphones/tablet/image-product.jpg",
+      "productPageDesktop": "/product-xx99-mark-one-headphones/desktop/image-product.jpg"
     },
     "newProduct": false,
     "title": "XX99 Mark I Headphones",

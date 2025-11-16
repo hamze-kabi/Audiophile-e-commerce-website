@@ -1,6 +1,6 @@
 <template>
   <!-- grid container of image -->
-  <div class="grid">
+  <div class="grid mt-20">
     <!-- three picture tags for three different images, each picture has three image for different screen sizes -->
     <!-- image1 -->
     <picture>
