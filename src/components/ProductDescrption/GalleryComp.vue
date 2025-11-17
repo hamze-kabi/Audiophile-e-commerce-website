@@ -1,7 +1,7 @@
 <template>
   <!-- grid container of image -->
   <div
-    class="grid mt-20 gap-5 md:grid-cols-3 md:grid-rows-2 md:gap-x-0 md:gap-y-5 md:ml-6 md:-mr-6"
+    class="grid mt-20 gap-5 md:grid-cols-3 md:grid-rows-2 md:gap-x-0 md:gap-y-5 md:ml-6 md:-mr-6 xl:ml-40 xl:gap-x-20 xl:mr-0"
   >
     <!-- three picture tags for three different images, each picture has three image for different screen sizes -->
     <!-- image1 -->
@@ -27,7 +27,7 @@
     </picture>
     <!-- image3 -->
     <picture
-      class="w-6/7 mx-auto md:w-4/5 md:col-start-2 md:row-start-1 md:row-span-2 md:col-span-2"
+      class="w-6/7 mx-auto md:w-4/5 md:col-start-2 md:row-start-1 md:row-span-2 md:col-span-2 xl:w-full"
     >
       <source media="(min-width:1440px)" :srcset="props.product.galleryImages.image3.desktop" />
       <source media="(min-width:768px)" :srcset="props.product.galleryImages.image3.tablet" />
