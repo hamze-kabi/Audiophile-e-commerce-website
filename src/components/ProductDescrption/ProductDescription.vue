@@ -40,11 +40,6 @@
         </section>
       </section>
     </div>
-    <!-- text section -->
-
-    <!-- <section
-      class="hidden flex flex-col text-center items-center justify-center gap-4 w-85 md:w-4/5 xl:w-120 xl:gap-7 xl:items-start xl:text-start"
-    > -->
     <!-- features + in the box -->
     <section class="flex flex-col mx-5 gap-20 xl:flex-row xl:mx-40">
       <FeaturesComp class="basis-2/3" :product="props.product" />
@@ -52,7 +47,6 @@
     </section>
     <!-- gallery -->
     <GalleryComp :product="props.product" />
-    <!-- </section> -->
     <!-- <OthersComp /> -->
     <!-- <CategoriesComp /> -->
     <!-- <BestGearComp /> -->

@@ -1,7 +1,8 @@
 <template>
   <!-- grid container of image -->
   <div
-    class="grid mt-20 gap-5 md:grid-cols-3 md:grid-rows-2 md:gap-x-0 md:gap-y-5 md:ml-6 md:-mr-6 xl:ml-40 xl:gap-x-20 xl:mr-0"
+    class="grid mt-20 gap-5 md:grid-cols-3 md:grid-rows-2 md:gap-x-0 md:gap-y-5 xl:gap-x-20 xl:mr-0"
+    :class="[languageState.isFarsi ? 'md:mr-6 md:-ml-6 xl:mr-40' : 'md:ml-6 md:-mr-6 xl:ml-40']"
   >
     <!-- three picture tags for three different images, each picture has three image for different screen sizes -->
     <!-- image1 -->
@@ -41,10 +42,14 @@
 </template>
 
 <script setup>
+import { useLanguageStateStore } from '@/stores/languageState'
+
 const props = defineProps({
   product: {
     type: Object,
     required: true,
   },
 })
+
+const languageState = useLanguageStateStore()
 </script>
