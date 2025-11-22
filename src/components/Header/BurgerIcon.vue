@@ -1,5 +1,6 @@
 <template>
   <img
+    class="cursor-pointer"
     @click="sidebar.open"
     v-if="!sidebar.isOpen"
     src="/shared/tablet/icon-hamburger.svg"
@@ -10,7 +11,7 @@
     v-if="sidebar.isOpen"
     src="/close button.png"
     alt="close button"
-    class="w-4 mr-2"
+    class="w-4 cursor-pointer"
   />
   <!-- <button @click="sidebar.open" class="focus:outline-none p-5 cursor-pointer"> -->
   <!-- lines -->

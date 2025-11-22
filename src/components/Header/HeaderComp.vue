@@ -7,7 +7,7 @@
   >
     <!-- inheritAttrs is used to give additional classes -->
     <BurgerIcon class="row-start-1 col-start-1 xl:hidden" />
-    <BrandNameComp class="row-start-1 col-start-2 pr-6" />
+    <BrandNameComp class="row-start-1 col-start-2" />
     <NavbarComp class="hidden xl:flex" />
     <CartComp class="row-start-1 col-start-3" />
     <LanguageChangerComp class="row-start-2 col-start-1 col-span-3 mt-2" />
