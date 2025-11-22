@@ -1,12 +1,12 @@
 <template>
   <!-- container of images title and see product button -->
-  <div>
-    <picture>
+  <div class="flex flex-col justify-center items-center gap-5">
+    <picture class="w-5/6 mx-auto md:w-15/16">
       <source media="(min-width:1440px)" :srcset="imageSet.desktop" />
       <source media="(min-width:768px)" :srcset="imageSet.tablet" />
-      <img class="w-80 rounded-2xl md:w-170 xl:w-135" :src="imageSet.mobile" :alt="imageAlt" />
+      <img class="rounded-2xl" :src="imageSet.mobile" :alt="imageAlt" />
     </picture>
-    <p>{{ productName }}</p>
+    <p class="font-bold text-xl tracking-widest">{{ productName }}</p>
     <LinkButton />
   </div>
 </template>

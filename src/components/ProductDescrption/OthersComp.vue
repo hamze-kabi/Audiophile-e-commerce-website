@@ -1,6 +1,9 @@
 <template>
-  <div v-for="id in chosenRandomIds" :key="id">
-    <OthersCard :receivedId="id" />
+  <p class="text-center text-3xl font-bold my-5">{{ t('YOU MAY ALSO LIKE') }}</p>
+  <div class="flex flex-col gap-10 md:flex-row md:gap-3 xl:mx-40">
+    <div v-for="id in chosenRandomIds" :key="id">
+      <OthersCard :receivedId="id" />
+    </div>
   </div>
 </template>
 
@@ -8,18 +11,19 @@
 import { useRoute } from 'vue-router'
 import HeadphonesData from '@/assets/data/HeadphonesData.json'
 import SpeakersData from '@/assets/data/SpeakersData.json'
-import EarphonesData from '@/assets/data/EarphonesData.json'
 import OthersCard from './OthersCard.vue'
+import { useI18n } from 'vue-i18n'
 
 const route = useRoute()
+const { t } = useI18n()
 const slug = route.params.slug
 let currentProductId
 let idsOfProductsExcludingCurrent = []
 let chosenRandomIds = []
 
-// extract ids of products excluding the displaying product
+// extract ids of products excluding the displaying product, earphones are excluded because there is no image for its others section
 const extractIdsOfProductsExcludingCurrent = function () {
-  ;[HeadphonesData, SpeakersData, EarphonesData].forEach((data) => {
+  ;[HeadphonesData, SpeakersData].forEach((data) => {
     // find id of current product
     if (data[slug]) {
       currentProductId = data[slug].id

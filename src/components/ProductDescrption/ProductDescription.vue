@@ -47,10 +47,10 @@
     </section>
     <!-- gallery -->
     <GalleryComp :product="props.product" />
-    <!-- <OthersComp /> -->
-    <!-- <CategoriesComp /> -->
-    <!-- <BestGearComp /> -->
-    <!-- <FooterComp /> -->
+    <OthersComp />
+    <CategoriesComp class="md:hidden" />
+    <BestGearComp />
+    <FooterComp />
   </main>
 </template>
 
