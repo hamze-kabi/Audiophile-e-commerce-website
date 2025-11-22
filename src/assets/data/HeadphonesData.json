@@ -15,6 +15,7 @@
     "title": "XX99 Mark II Headphones",
     "content": "XX99 Mark II Headphones content",
     "price": 250,
+    "numberOfOrders": 0,
     "featuresContent": "XX99 Mark II Headphones features content",
     "inTheBoxContent": {
       "item1": { "name": "Headphone unit", "qty": 1 },
@@ -62,6 +63,7 @@
     "title": "XX59 Headphones",
     "content": "XX59 Headphones content",
     "price": 150,
+    "numberOfOrders": 0,
     "featuresContent": "XX59 Headphones features content",
     "inTheBoxContent": {
       "item1": { "name": "Headphone unit", "qty": 1 },
@@ -108,6 +110,7 @@
     "title": "XX99 Mark I Headphones",
     "content": "XX99 Mark I Headphones content",
     "price": 200,
+    "numberOfOrders": 0,
     "featuresContent": "XX99 Mark I Headphones features content",
     "inTheBoxContent": {
       "item1": { "name": "Headphone unit", "qty": 1 },

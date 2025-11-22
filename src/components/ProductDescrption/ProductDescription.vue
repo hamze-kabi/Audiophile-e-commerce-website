@@ -35,8 +35,8 @@
         <PriceComp :price="props.product.price" />
         <!-- order section -->
         <section class="flex gap-5">
-          <NumberOfOrders />
-          <AddToCartBtn />
+          <NumberOfOrders @emittedOrderQuantity="(num) => (orderQuantity = num)" />
+          <AddToCartBtn :product="props.product" :numOfOrders="orderQuantity" />
         </section>
       </section>
     </div>
@@ -79,4 +79,6 @@ const props = defineProps({
 
 const { t } = useI18n()
 const languageState = useLanguageStateStore()
+
+const orderQuantity = ref(1)
 </script>

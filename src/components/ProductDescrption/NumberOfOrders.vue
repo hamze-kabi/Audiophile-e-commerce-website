@@ -25,6 +25,12 @@ const orderQuantity = ref(1)
 const translatedOrderQuantity = ref(orderQuantity.value)
 const languageState = useLanguageStateStore()
 
+// orderQuantity gets emitted to parent element to get received by addToCart element
+const emit = defineEmits(['emittedOrderQuantity'])
+watch(orderQuantity, (newVal) => {
+  emit('emittedOrderQuantity', newVal)
+})
+
 // translates the order quantity on the startup, if the active language is Farsi
 if (languageState.isFarsi) {
   translatedOrderQuantity.value = numberLanguageCoverterFunc('enToFa', orderQuantity.value)
