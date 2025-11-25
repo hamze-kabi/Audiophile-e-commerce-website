@@ -17,6 +17,7 @@
     <SideBar />
   </div>
   <hr class="hidden xl:block border-t border-gray-100 opacity-20 mt-5" />
+  <cartModal />
 </template>
 
 <script setup>
@@ -27,6 +28,7 @@ import BrandNameComp from './BrandNameComp.vue'
 import CartComp from './CartComp.vue'
 import LanguageChangerComp from './LanguageChangerComp.vue'
 import { useLanguageStateStore } from '@/stores/languageState'
+import cartModal from '../Cart/cartModal.vue'
 
 defineOptions({
   inheritAttrs: true,

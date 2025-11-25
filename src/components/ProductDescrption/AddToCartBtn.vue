@@ -34,8 +34,10 @@ const updateNumberOfOrdersInDataFile = function () {
 }
 
 //  when add to cart btn is clicked the numbers selected in NumberOfOrders.vue gets emitted to ProductsDescription.vue
-//  then gets received as props to this .vue file, this number updates numberOfOrders which all products have in json files
+//  then gets received as props to this .vue file, this number updates numberOfOrders which all products have in their
+//  respective json files
 const addToCartFunc = function () {
   updateNumberOfOrdersInDataFile()
+  console.log(HeadphonesData)
 }
 </script>
