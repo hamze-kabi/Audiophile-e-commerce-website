@@ -1,30 +1,64 @@
-import { ref, watch } from 'vue'
+import { ref } from 'vue'
 import { defineStore } from 'pinia'
 
 export const useCartModalStore = defineStore('cartModal', () => {
+  // the following lines are related to opening and closing the cart modal
   const isOpen = ref(false)
-  console.log(0, isOpen.value)
   const toggle = function () {
     isOpen.value = !isOpen.value
-    console.log(1, isOpen.value)
   }
 
   const open = function () {
     isOpen.value = true
-    console.log(2, isOpen.value)
   }
 
   const close = function () {
     isOpen.value = false
-    console.log(3, isOpen.value)
   }
 
-  // watch(isOpen.value, (newVal) => {
-  //   if (newVal) {
-  //     document.body.classList.add('opacity-50')
-  //   } else {
-  //     document.body.classList.remove('opacity-50')
-  //   }
-  // })
-  return { isOpen, toggle, open, close }
+  // the following lines are related to management of cart items
+  const cartItems = ref([])
+
+  // cartItems.value.push({ p1: { d1: 'dd1', n1: 1 } })
+  // cartItems.value.push({ p2: { d2: 'dd2', n2: 2 } })
+  const addItem = function (product, number) {
+    cartItems.value.push(product)
+    // console.log(product.id)
+    // cartItems.value.push()
+  }
+
+  const removeItem = function (id) {
+    let yo
+    cartItems.value.forEach((el, idx) => {
+      if (el[0].id === id) {
+        yo = idx
+      }
+      delete cartItems.value[yo]
+    })
+    // console.log(cartItems.value[0][0])
+    // delete cartItems.value.product.title
+    // console.log('removed: ', cartItems.value)
+  }
+
+  const removeAll = function () {
+    for (let item in cartItems.value) {
+      delete cartItems.value[item]
+    }
+    console.log('removed all: ', cartItems.value)
+  }
+  // /////////////////////////////////////////////////////// help
+  // select value from key
+  // console.log(yo.value['a'])
+
+  // add
+  // yo.value['c'] = 3
+
+  // remove
+  // delete yo.value.b
+
+  // iteration
+  // Object.entries(yo.value)
+  // Object.keys(yo.value)
+  // Object.values(yo.value)
+  return { isOpen, toggle, open, close, cartItems, addItem, removeItem, removeAll }
 })

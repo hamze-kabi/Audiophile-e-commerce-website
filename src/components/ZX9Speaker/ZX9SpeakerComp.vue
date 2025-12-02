@@ -20,7 +20,7 @@
       <p class="text-center w-5/6 md:w-1/1 md:max-w-90 md:font-semibold xl:text-start">
         {{ t('zx9 content') }}
       </p>
-      <LinkButton to="/product/zx9speaker" :style="'black'" />
+      <LinkButton to="/product/ZX9Speaker" :style="'black'" />
     </div>
   </div>
 </template>

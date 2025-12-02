@@ -15,7 +15,6 @@
     "title": "ZX9 Speaker",
     "content": "ZX9 Speaker content",
     "price": 480,
-    "numberOfOrders": 0,
     "featuresContent": "ZX9 Speaker features content",
     "inTheBoxContent": {
       "item1": { "name": "Speaker unit", "qty": 2 },
@@ -45,7 +44,8 @@
       "mobile": "/shared/mobile/image-zx9-speaker.jpg",
       "tablet": "/shared/tablet/image-zx9-speaker.jpg",
       "desktop": "/shared/desktop/image-zx9-speaker.jpg"
-    }
+    },
+    "cartImage": "/cart/image-zx9-speaker.jpg"
   },
   "ZX7Speaker": {
     "id": 5,
@@ -63,7 +63,6 @@
     "title": "ZX7 Speaker",
     "content": "ZX7 Speaker content",
     "price": 350,
-    "numberOfOrders": 0,
     "featuresContent": "ZX7 Speaker features content",
     "inTheBoxContent": {
       "item1": { "name": "Speaker unit", "qty": 2 },
@@ -93,6 +92,7 @@
       "mobile": "/shared/mobile/image-zx7-speaker.jpg",
       "tablet": "/shared/tablet/image-zx7-speaker.jpg",
       "desktop": "/shared/desktop/image-zx7-speaker.jpg"
-    }
+    },
+    "cartImage": "/cart/image-zx7-speaker.jpg"
   }
 }

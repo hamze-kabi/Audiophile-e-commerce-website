@@ -15,7 +15,6 @@
     "title": "XX99 Mark II Headphones",
     "content": "XX99 Mark II Headphones content",
     "price": 250,
-    "numberOfOrders": 0,
     "featuresContent": "XX99 Mark II Headphones features content",
     "inTheBoxContent": {
       "item1": { "name": "Headphone unit", "qty": 1 },
@@ -45,7 +44,8 @@
       "mobile": "/shared/mobile/image-xx99-mark-two-headphones.jpg",
       "tablet": "/shared/tablet/image-xx99-mark-two-headphones.jpg",
       "desktop": "/shared/desktop/image-xx99-mark-two-headphones.jpg"
-    }
+    },
+    "cartImage": "/cart/image-xx99-mark-two-headphones.jpg"
   },
   "XX59": {
     "id": 2,
@@ -63,7 +63,6 @@
     "title": "XX59 Headphones",
     "content": "XX59 Headphones content",
     "price": 150,
-    "numberOfOrders": 0,
     "featuresContent": "XX59 Headphones features content",
     "inTheBoxContent": {
       "item1": { "name": "Headphone unit", "qty": 1 },
@@ -92,7 +91,8 @@
       "mobile": "/shared/mobile/image-xx59-headphones.jpg",
       "tablet": "/shared/tablet/image-xx59-headphones.jpg",
       "desktop": "/shared/desktop/image-xx59-headphones.jpg"
-    }
+    },
+    "cartImage": "/cart/image-xx59-headphones.jpg"
   },
   "XX99MarkI": {
     "slug": "XX99MarkI",
@@ -110,7 +110,6 @@
     "title": "XX99 Mark I Headphones",
     "content": "XX99 Mark I Headphones content",
     "price": 200,
-    "numberOfOrders": 0,
     "featuresContent": "XX99 Mark I Headphones features content",
     "inTheBoxContent": {
       "item1": { "name": "Headphone unit", "qty": 1 },
@@ -139,6 +138,7 @@
       "mobile": "/shared/mobile/image-xx99-mark-one-headphones.jpg",
       "tablet": "/shared/tablet/image-xx99-mark-one-headphones.jpg",
       "desktop": "/shared/desktop/image-xx99-mark-one-headphones.jpg"
-    }
+    },
+    "cartImage": "/cart/image-xx99-mark-one-headphones.jpg"
   }
 }

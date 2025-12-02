@@ -11,12 +11,6 @@
   </main>
 </template>
 
-<!-- <GoBack /> -->
-<!-- product container -->
-<!-- <ProductDescription :product="product" /> -->
-<!-- </main> -->
-<!-- </template> -->
-
 <script setup>
 import HeaderComp from '@/components/Header/HeaderComp.vue'
 import GoBack from '@/components/Go Back/GoBack.vue'

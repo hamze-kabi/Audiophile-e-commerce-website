@@ -8,7 +8,7 @@
       <h2 :dir="{ rtl: languageState.isFarsi }" class="text-[2rem] tracking-wider font-semibold">
         ZX7 {{ t('SPEAKER') }}
       </h2>
-      <LinkButton to="/product/zx7speaker" :style="'transparent'" />
+      <LinkButton to="/product/ZX7Speaker" :style="'transparent'" />
     </div>
   </div>
 </template>

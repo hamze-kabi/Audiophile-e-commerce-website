@@ -8,12 +8,11 @@ import YX1EarphonesComp from '@/components/YX1Earphones/YX1EarphonesComp.vue'
 import BestGearComp from '@/components/BestGear/BestGearComp.vue'
 import FooterComp from '@/components/Footer/FooterComp.vue'
 import { useLanguageStateStore } from '@/stores/languageState'
-import { onMounted } from 'vue'
 
 // use to manage language of site
 const languageState = useLanguageStateStore()
-onMounted(() => {})
 </script>
+
 <template>
   <!-- to occupy and turn the whole screen into flex -->
   <div

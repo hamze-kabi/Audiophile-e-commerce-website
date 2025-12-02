@@ -15,7 +15,6 @@
     "title": "YX1 Wireless Earphones",
     "content": "YX1 Wireless Earphones content",
     "price": 80,
-    "numberOfOrders": 0,
     "featuresContent": "YX1 Wireless Earphones features content",
     "inTheBoxContent": {
       "item1": { "name": "Earphone unit", "qty": 2 },
@@ -45,6 +44,7 @@
       "mobile": "",
       "tablet": "",
       "desktop": ""
-    }
+    },
+    "cartImage": "/cart/image-yx1-earphones.jpg"
   }
 }

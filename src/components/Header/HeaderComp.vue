@@ -15,9 +15,9 @@
       class="border-t border-gray-100 opacity-20 row-start-3 col-start-1 col-span-3 -mt-18 xl:hidden"
     />
     <SideBar />
+    <cartModal />
   </div>
   <hr class="hidden xl:block border-t border-gray-100 opacity-20 mt-5" />
-  <cartModal />
 </template>
 
 <script setup>
