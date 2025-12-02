@@ -1,44 +1,36 @@
-for multilanguage feature i18n is used
-state of language is managed using pinia
+# Todo App
 
-# vue-project
+A simple todo app, created using vue and tailwind
 
-This template should help get you started developing with Vue 3 in Vite.
+## Table of contents
 
-## Recommended IDE Setup
+- [Overview](#overview)
+  - [Screenshot](#screenshot)
+  - [Links](#links)
+- [My process](#my-process)
+  - [Built with](#built-with)
+- [Author](#author)
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+## Overview
 
-## Customize configuration
+### Screenshot
 
-See [Vite Configuration Reference](https://vite.dev/config/).
+![Screenshot](screenshot.png)
 
-## Project Setup
+### Links
 
-```sh
-npm install
-```
+- Solution URL: [https://github.com/hamze-kabi/todo-app-vue---tailwind](https://github.com/hamze-kabi/todo-app-vue---tailwind)
+- Live Site URL: [https://hamze-kabi-todoapp.netlify.app/](https://hamze-kabi-todoapp.netlify.app/)
 
-### Compile and Hot-Reload for Development
+## My process
 
-```sh
-npm run dev
-```
+### Built with
 
-### Compile and Minify for Production
+- Vue
+- Tailwind
+- Pinia
+- Mobile-first workflow
 
-```sh
-npm run build
-```
+## Author
 
-### Run Unit Tests with [Vitest](https://vitest.dev/)
-
-```sh
-npm run test:unit
-```
-
-### Lint with [ESLint](https://eslint.org/)
-
-```sh
-npm run lint
-```
+- Github - [https://github.com/hamze-kabi](https://github.com/hamze-kabi)
