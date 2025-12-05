@@ -15,7 +15,7 @@ A multipage multilanguage audio assets marketplace. Created using vue, tailwind,
 
 ### Screenshot
 
-![\public\screenshots.png](\public\screenshots.png)
+![screenshots.png](./screenshots.png)
 
 ### Links
 
