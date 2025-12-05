@@ -19,7 +19,7 @@ A multipage multilanguage audio assets marketplace. Created using vue, tailwind,
 
 ### Links
 
-- Solution URL: [https://github.com/hamze-kabi/todo-app-vue---tailwind](https://github.com/hamze-kabi/todo-app-vue---tailwind)
+- Solution URL: [https://github.com/hamze-kabi/Audiophile-e-commerce-website](https://github.com/hamze-kabi/Audiophile-e-commerce-website)
 - Live Site URL: [https://hamze-kabi-todoapp.netlify.app/](https://hamze-kabi-todoapp.netlify.app/)
 
 ## My process
