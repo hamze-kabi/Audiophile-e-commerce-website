@@ -1,6 +1,6 @@
 # Todo App
 
-A simple todo app, created using vue and tailwind
+A multipage multilanguage audio assets marketplace. Created using vue, tailwind, pinia and i18n.
 
 ## Table of contents
 
@@ -15,7 +15,7 @@ A simple todo app, created using vue and tailwind
 
 ### Screenshot
 
-![Screenshot](screenshot.png)
+![/screenshots.png](/screenshots.png.png)
 
 ### Links
 
@@ -29,6 +29,8 @@ A simple todo app, created using vue and tailwind
 - Vue
 - Tailwind
 - Pinia
+- i18n
+- vue-router
 - Mobile-first workflow
 
 ## Author
