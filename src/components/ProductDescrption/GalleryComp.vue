@@ -11,32 +11,50 @@
       <div class="flex flex-col gap-3">
         <!-- image1 -->
         <picture class="">
-          <source media="(min-width:1440px)" :srcset="props.product.galleryImages.image1.desktop" />
-          <source media="(min-width:768px)" :srcset="props.product.galleryImages.image1.tablet" />
+          <source
+            media="(min-width:1440px)"
+            :srcset="'/Audiophile-e-commerce-website/' + props.product.galleryImages.image1.desktop"
+          />
+          <source
+            media="(min-width:768px)"
+            :srcset="'/Audiophile-e-commerce-website/' + props.product.galleryImages.image1.tablet"
+          />
           <img
             class="rounded-2xl"
-            :src="props.product.galleryImages.image1.mobile"
+            :src="'/Audiophile-e-commerce-website/' + props.product.galleryImages.image1.mobile"
             :alt="props.product.title"
           />
         </picture>
         <!-- image2 -->
         <picture class="">
-          <source media="(min-width:1440px)" :srcset="props.product.galleryImages.image2.desktop" />
-          <source media="(min-width:768px)" :srcset="props.product.galleryImages.image2.tablet" />
+          <source
+            media="(min-width:1440px)"
+            :srcset="'/Audiophile-e-commerce-website/' + props.product.galleryImages.image2.desktop"
+          />
+          <source
+            media="(min-width:768px)"
+            :srcset="'/Audiophile-e-commerce-website/' + props.product.galleryImages.image2.tablet"
+          />
           <img
             class="rounded-2xl"
-            :src="props.product.galleryImages.image2.mobile"
+            :src="'/Audiophile-e-commerce-website/' + props.product.galleryImages.image2.mobile"
             :alt="props.product.title"
           />
         </picture>
       </div>
       <!-- image3 -->
       <picture class="">
-        <source media="(min-width:1440px)" :srcset="props.product.galleryImages.image3.desktop" />
-        <source media="(min-width:768px)" :srcset="props.product.galleryImages.image3.tablet" />
+        <source
+          media="(min-width:1440px)"
+          :srcset="'/Audiophile-e-commerce-website/' + props.product.galleryImages.image3.desktop"
+        />
+        <source
+          media="(min-width:768px)"
+          :srcset="'/Audiophile-e-commerce-website/' + props.product.galleryImages.image3.tablet"
+        />
         <img
           class="rounded-2xl"
-          :src="props.product.galleryImages.image3.mobile"
+          :src="'/Audiophile-e-commerce-website/' + props.product.galleryImages.image3.mobile"
           :alt="props.product.title"
         />
       </picture>

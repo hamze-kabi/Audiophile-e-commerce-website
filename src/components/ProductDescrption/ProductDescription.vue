@@ -7,11 +7,17 @@
     <div class="flex flex-col items-center justify-center md:flex-row xl:mx-30">
       <!-- product image for different screen sizes -->
       <picture>
-        <source media="(min-width:1440px)" :srcset="props.product.images.productPageDesktop" />
-        <source media="(min-width:768px)" :srcset="props.product.images.productPageTablet" />
+        <source
+          media="(min-width:1440px)"
+          :srcset="'/Audiophile-e-commerce-website/' + props.product.images.productPageDesktop"
+        />
+        <source
+          media="(min-width:768px)"
+          :srcset="'/Audiophile-e-commerce-website/' + props.product.images.productPageTablet"
+        />
         <img
           class="w-90/100 mx-auto my-5 basis-1/3"
-          :src="props.product.images.productPageMobile"
+          :src="'/Audiophile-e-commerce-website/' + props.product.images.productPageMobile"
           :alt="props.product.slug"
         />
       </picture>
