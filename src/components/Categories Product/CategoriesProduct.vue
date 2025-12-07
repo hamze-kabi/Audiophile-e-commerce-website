@@ -7,11 +7,17 @@
   >
     <!-- images for mobile, md and xl -->
     <picture>
-      <source media="(min-width:1440px)" :srcset="props.product.images.desktop" />
-      <source media="(min-width:768px)" :srcset="props.product.images.tablet" />
+      <source
+        media="(min-width:1440px)"
+        :srcset="'/Audiophile-e-commerce-website/' + props.product.images.desktop"
+      />
+      <source
+        media="(min-width:768px)"
+        :srcset="'/Audiophile-e-commerce-website/' + props.product.images.tablet"
+      />
       <img
         class="w-80 rounded-2xl md:w-170 xl:w-135"
-        :src="props.product.images.mobile"
+        :src="'/Audiophile-e-commerce-website/' + props.product.images.mobile"
         alt="XX99 Mark II Headphones"
       />
     </picture>
