@@ -6,19 +6,12 @@
     class="flex flex-col items-center justify-center mt-15 gap-4 md:gap-10 xl:gap-30 xl:mb-20"
   >
     <!-- images for mobile, md and xl -->
-    <p>eeeeeeeeeeeeeeee3333333333333</p>
     <picture>
-      <source
-        media="(min-width:1440px)"
-        :srcset="'/Audiophile-e-commerce-website/' + props.product.images.desktop"
-      />
-      <source
-        media="(min-width:768px)"
-        :srcset="'/Audiophile-e-commerce-website/' + props.product.images.tablet"
-      />
+      <source media="(min-width:1440px)" :srcset="props.product.images.desktop" />
+      <source media="(min-width:768px)" :srcset="props.product.images.tablet" />
       <img
         class="w-80 rounded-2xl md:w-170 xl:w-135"
-        :src="'/Audiophile-e-commerce-website/' + props.product.images.mobile"
+        :src="props.product.images.mobile"
         alt="XX99 Mark II Headphones"
       />
     </picture>
