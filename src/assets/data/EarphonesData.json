@@ -4,12 +4,12 @@
     "slug": "YX1WirelessEarphones",
     "xlFlexRowDirection": "xl:flex-row",
     "images": {
-      "mobile": "/product-yx1-earphones/mobile/image-category-page-preview.jpg",
-      "tablet": "/product-yx1-earphones/tablet/image-category-page-preview.jpg",
-      "desktop": "/product-yx1-earphones/desktop/image-category-page-preview.jpg",
-      "productPageMobile": "/product-yx1-earphones/mobile/image-product.jpg",
-      "productPageTablet": "/product-yx1-earphones/tablet/image-product.jpg",
-      "productPageDesktop": "/product-yx1-earphones/desktop/image-product.jpg"
+      "mobile": "/Audiophile-e-commerce-website/product-yx1-earphones/mobile/image-category-page-preview.jpg",
+      "tablet": "/Audiophile-e-commerce-website/product-yx1-earphones/tablet/image-category-page-preview.jpg",
+      "desktop": "/Audiophile-e-commerce-website/product-yx1-earphones/desktop/image-category-page-preview.jpg",
+      "productPageMobile": "/Audiophile-e-commerce-website/product-yx1-earphones/mobile/image-product.jpg",
+      "productPageTablet": "/Audiophile-e-commerce-website/product-yx1-earphones/tablet/image-product.jpg",
+      "productPageDesktop": "/Audiophile-e-commerce-website/product-yx1-earphones/desktop/image-product.jpg"
     },
     "newProduct": true,
     "title": "YX1 Wireless Earphones",
@@ -25,19 +25,19 @@
     },
     "galleryImages": {
       "image1": {
-        "mobile": "/product-yx1-earphones/mobile/image-gallery-1.jpg",
-        "tablet": "/product-yx1-earphones/tablet/image-gallery-1.jpg",
-        "desktop": "/product-yx1-earphones/desktop/image-gallery-1.jpg"
+        "mobile": "/Audiophile-e-commerce-website/product-yx1-earphones/mobile/image-gallery-1.jpg",
+        "tablet": "/Audiophile-e-commerce-website/product-yx1-earphones/tablet/image-gallery-1.jpg",
+        "desktop": "/Audiophile-e-commerce-website/product-yx1-earphones/desktop/image-gallery-1.jpg"
       },
       "image2": {
-        "mobile": "/product-yx1-earphones/mobile/image-gallery-2.jpg",
-        "tablet": "/product-yx1-earphones/tablet/image-gallery-2.jpg",
-        "desktop": "/product-yx1-earphones/desktop/image-gallery-2.jpg"
+        "mobile": "/Audiophile-e-commerce-website/product-yx1-earphones/mobile/image-gallery-2.jpg",
+        "tablet": "/Audiophile-e-commerce-website/product-yx1-earphones/tablet/image-gallery-2.jpg",
+        "desktop": "/Audiophile-e-commerce-website/product-yx1-earphones/desktop/image-gallery-2.jpg"
       },
       "image3": {
-        "mobile": "/product-yx1-earphones/mobile/image-gallery-3.jpg",
-        "tablet": "/product-yx1-earphones/tablet/image-gallery-3.jpg",
-        "desktop": "/product-yx1-earphones/desktop/image-gallery-3.jpg"
+        "mobile": "/Audiophile-e-commerce-website/product-yx1-earphones/mobile/image-gallery-3.jpg",
+        "tablet": "/Audiophile-e-commerce-website/product-yx1-earphones/tablet/image-gallery-3.jpg",
+        "desktop": "/Audiophile-e-commerce-website/product-yx1-earphones/desktop/image-gallery-3.jpg"
       }
     },
     "otherImages": {
@@ -45,6 +45,6 @@
       "tablet": "",
       "desktop": ""
     },
-    "cartImage": "/cart/image-yx1-earphones.jpg"
+    "cartImage": "/Audiophile-e-commerce-website/cart/image-yx1-earphones.jpg"
   }
 }
