@@ -13,7 +13,6 @@
     <div v-for="earphone in EarphonesData" :key="earphone.title">
       <CategoriesProduct :product="earphone" />
     </div>
-    <p>ddddddddd</p>
     <CategoriesComp class="w-full mt-7" />
     <BestGearComp />
     <FooterComp />
