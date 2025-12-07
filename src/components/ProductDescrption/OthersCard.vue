@@ -2,19 +2,9 @@
   <!-- container of images title and see product button -->
   <div class="flex flex-col justify-center items-center gap-5">
     <picture class="w-5/6 mx-auto md:w-15/16">
-      <source
-        media="(min-width:1440px)"
-        :srcset="'/Audiophile-e-commerce-website/' + imageSet.desktop"
-      />
-      <source
-        media="(min-width:768px)"
-        :srcset="'/Audiophile-e-commerce-website/' + imageSet.tablet"
-      />
-      <img
-        class="rounded-2xl"
-        :src="'/Audiophile-e-commerce-website/' + imageSet.mobile"
-        :alt="imageAlt"
-      />
+      <source media="(min-width:1440px)" :srcset="imageSet.desktop" />
+      <source media="(min-width:768px)" :srcset="imageSet.tablet" />
+      <img class="rounded-2xl" :src="imageSet.mobile" :alt="imageAlt" />
     </picture>
     <p class="font-bold text-xl tracking-widest">{{ productName }}</p>
     <LinkButton :to="productName" />
