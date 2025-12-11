@@ -1,8 +1,9 @@
 <template>
+  <!-- pb-30 md:pb-[2vw] xl:mb-[5vw]  -->
   <main
-    class="flex flex-col items-center justify-center gap-6 pt-30 pb-30 md:pb-40 xl:items-start xl:ml-47"
+    class="flex flex-col items-center justify-center gap-6 xl:my-auto xl:items-start"
     :dir="[$i18n.locale === 'fa' ? 'rtl' : 'ltr']"
-    :class="{ 'xl:mr-47 ml-0': languageState.isFarsi }"
+    :class="[languageState.isFarsi ? 'xl:mr-40' : 'xl:ml-40']"
   >
     <p
       class="tracking-[0.7rem] text-gray-600 font-(family-name:rubik)"

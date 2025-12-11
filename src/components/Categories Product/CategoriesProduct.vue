@@ -7,11 +7,11 @@
   >
     <!-- images for mobile, md and xl -->
     <picture>
-      <source media="(min-width:1440px)" :srcset="props.product.images.desktop" />
-      <source media="(min-width:768px)" :srcset="props.product.images.tablet" />
+      <source media="(min-width:1440px)" :srcset="prepend + props.product.images.desktop" />
+      <source media="(min-width:768px)" :srcset="prepend + props.product.images.tablet" />
       <img
         class="w-80 rounded-2xl md:w-170 xl:w-135"
-        :src="props.product.images.mobile"
+        :src="prepend + props.product.images.mobile"
         alt="XX99 Mark II Headphones"
       />
     </picture>
@@ -58,4 +58,5 @@ const props = defineProps({
 
 const { t } = useI18n()
 const languageState = useLanguageStateStore()
+const prepend = '/Audiophile-e-commerce-website'
 </script>

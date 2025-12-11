@@ -7,3 +7,7 @@
 </template>
 
 <script setup></script>
+
+<!-- problems:
+  background image on top of page in homepage is not centered
+-->

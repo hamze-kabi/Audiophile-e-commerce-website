@@ -11,21 +11,23 @@ import { useLanguageStateStore } from '@/stores/languageState'
 
 // use to manage language of site
 const languageState = useLanguageStateStore()
+
+const prepend = '/Audiophile-e-commerce-website'
 </script>
 
 <template>
-  <!-- to occupy and turn the whole screen into flex -->
-  <div
-    :lang="languageState.currentLang"
-    class="w-screen flex flex-col justify-center bg-[url(/home/mobile/image-header.jpg)] bg-no-repeat bg-cover bg-position-[center_bottom_2rem] md:bg-[url(/home/tablet/image-header.jpg)] md:bg-position-[center_top_0rem] lg:bg-center"
-    :class="[
-      languageState.isFarsi
-        ? 'font-[family-name:rubik] xl:bg-[url(/home/desktop/image-hero-flipped.jpg)]'
-        : 'xl:bg-[url(/home/desktop/image-hero.jpg)]',
-    ]"
-  >
-    <!-- container of header and hero -->
-    <div>
+  <div class="flex flex-col justify-center relative w-screen h-screen overflow-hidden">
+    <picture>
+      <source media="(min-width:1440px)" :srcset="prepend + '/home/desktop/image-hero.jpg'" />
+      <source media="(min-width:768px)" :srcset="prepend + '/home/tablet/image-header.jpg'" />
+      <img
+        class="absolute inset-0 w-screen max-h-screen object-cover -z-1"
+        :class="{ 'transform scale-x-[-1]': languageState.isFarsi }"
+        :src="prepend + '/home/mobile/image-header.jpg'"
+        alt="XX99 Mark II Headphones"
+      />
+    </picture>
+    <div class="flex flex-col h-screen">
       <HeaderComp />
       <HeroComp />
     </div>

@@ -17,7 +17,7 @@
           :class="[$i18n.locale === 'fa' ? '' : '']"
           :dir="[$i18n.locale === 'fa' ? 'rtl' : 'ltr']"
         >
-          <img class="w-15 rounded-xl" :src="item[0].cartImage" :alt="item[0].title" />
+          <img class="w-15 rounded-xl" :src="prepend + item[0].cartImage" :alt="item[0].title" />
           <div class="flex flex-col">
             <p>{{ t(item[0].title) }}</p>
             <p>{{ t('Unit price') }}: ${{ item[0].price }}</p>
@@ -58,4 +58,6 @@ onClickOutside(modalRef, (event) => {
     cartModalStore.close()
   }
 })
+
+const prepend = '/Audiophile-e-commerce-website'
 </script>
