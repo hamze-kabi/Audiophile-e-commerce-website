@@ -1,6 +1,6 @@
 # Todo App
 
-A multipage multilanguage audio assets marketplace. Created using vue, tailwind, pinia and i18n.
+A multipage multilanguage audio assets marketplace. Created using vue, tailwind, pinia, vueuse and i18n.
 
 ## Table of contents
 
